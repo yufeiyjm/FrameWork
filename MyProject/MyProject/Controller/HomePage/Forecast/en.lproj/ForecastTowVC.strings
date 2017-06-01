@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Price over last 2 weeks"; ObjectID = "1NB-hY-4qK"; */
+"1NB-hY-4qK.text" = "Price over last 2 weeks";
+
+/* Class = "UILabel"; text = " "; ObjectID = "2zx-95-GVS"; */
+"2zx-95-GVS.text" = " ";
+
+/* Class = "UILabel"; text = " "; ObjectID = "p2p-UA-u5e"; */
+"p2p-UA-u5e.text" = " ";
+
+/* Class = "UILabel"; text = "Notify Me"; ObjectID = "skg-hc-deQ"; */
+"skg-hc-deQ.text" = "Notify Me";
+
+/* Class = "UILabel"; text = "Departure:"; ObjectID = "tUC-lg-JNE"; */
+"tUC-lg-JNE.text" = "Departure:";
+
+/* Class = "UILabel"; text = " "; ObjectID = "wiO-9n-MyF"; */
+"wiO-9n-MyF.text" = " ";
+
+/* Class = "UILabel"; text = "Return:"; ObjectID = "y1T-Vs-605"; */
+"y1T-Vs-605.text" = "Return:";
