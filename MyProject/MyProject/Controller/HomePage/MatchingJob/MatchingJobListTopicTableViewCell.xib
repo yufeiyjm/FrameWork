@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MatchingJobListTopicTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEz-tC-FbA">
+                        <rect key="frame" x="14" y="38" width="347" height="52"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XPu-4Y-swN">
+                                <rect key="frame" x="0.0" y="1" width="347" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="职场中，什么样的女性最受欢迎？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMs-WH-fS6">
+                                        <rect key="frame" x="67" y="0.0" width="265" height="50"/>
+                                        <fontDescription key="fontDescription" name="PingFangSC-Thin" family="PingFang SC" pointSize="14"/>
+                                        <color key="textColor" red="0.42352941179999998" green="0.45098039220000002" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hMs-WH-fS6" firstAttribute="leading" secondItem="XPu-4Y-swN" secondAttribute="leading" constant="67" id="105-WO-hSh"/>
+                                    <constraint firstItem="hMs-WH-fS6" firstAttribute="top" secondItem="XPu-4Y-swN" secondAttribute="top" id="3lz-sU-I6U"/>
+                                    <constraint firstAttribute="trailing" secondItem="hMs-WH-fS6" secondAttribute="trailing" constant="15" id="9Pc-Wq-YSv"/>
+                                    <constraint firstAttribute="bottom" secondItem="hMs-WH-fS6" secondAttribute="bottom" id="Ke2-4J-SQs"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcom3.png" translatesAutoresizingMaskIntoConstraints="NO" id="bwo-My-4sF">
+                                <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="MKM-Gn-IaS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorWithUIColor">
+                                        <color key="value" red="0.1019607843" green="0.66274509800000003" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bwo-My-4sF" firstAttribute="top" secondItem="KEz-tC-FbA" secondAttribute="top" id="7RG-pr-VU2"/>
+                            <constraint firstAttribute="bottom" secondItem="bwo-My-4sF" secondAttribute="bottom" id="8Og-lm-lhs"/>
+                            <constraint firstItem="bwo-My-4sF" firstAttribute="leading" secondItem="KEz-tC-FbA" secondAttribute="leading" id="8fY-SV-gfc"/>
+                            <constraint firstAttribute="bottom" secondItem="XPu-4Y-swN" secondAttribute="bottom" constant="1" id="APL-BX-wyQ"/>
+                            <constraint firstAttribute="height" constant="52" id="bcT-6e-1K0"/>
+                            <constraint firstItem="XPu-4Y-swN" firstAttribute="top" secondItem="KEz-tC-FbA" secondAttribute="top" constant="1" id="cib-A8-Veu"/>
+                            <constraint firstAttribute="trailing" secondItem="XPu-4Y-swN" secondAttribute="trailing" id="k6d-6y-9tC"/>
+                            <constraint firstItem="XPu-4Y-swN" firstAttribute="leading" secondItem="KEz-tC-FbA" secondAttribute="leading" id="nrZ-g4-jL1"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="评论" translatesAutoresizingMaskIntoConstraints="NO" id="hX6-Fj-vEE">
+                        <rect key="frame" x="15" y="11" width="11" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="5KN-NA-NnF"/>
+                            <constraint firstAttribute="width" constant="11" id="HPJ-YB-0VT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大家正在讨论" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPF-ro-rrc">
+                        <rect key="frame" x="34" y="8" width="66" height="15.5"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="11"/>
+                        <color key="textColor" red="0.58823529411764708" green="0.6705882352941176" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="KEz-tC-FbA" secondAttribute="trailing" constant="14" id="7kG-Bb-kPj"/>
+                    <constraint firstItem="hX6-Fj-vEE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="CqO-n1-GLv"/>
+                    <constraint firstAttribute="bottom" secondItem="KEz-tC-FbA" secondAttribute="bottom" constant="14.5" id="Ghh-BM-eft"/>
+                    <constraint firstItem="dPF-ro-rrc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Lbv-7g-1hR"/>
+                    <constraint firstItem="KEz-tC-FbA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="Nqe-RC-Fn8"/>
+                    <constraint firstItem="dPF-ro-rrc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="34" id="V9b-DA-vPD"/>
+                    <constraint firstItem="hX6-Fj-vEE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="X24-lQ-C54"/>
+                    <constraint firstItem="KEz-tC-FbA" firstAttribute="top" secondItem="dPF-ro-rrc" secondAttribute="bottom" constant="14.5" id="g6a-F7-ga6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headImageView" destination="bwo-My-4sF" id="hhI-63-ut9"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="89.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="welcom3.png" width="750" height="1334"/>
+        <image name="评论" width="16" height="14"/>
+    </resources>
+</document>
