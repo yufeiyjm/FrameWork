@@ -16,6 +16,8 @@
 #import <UIKit/UIKit.h>
 #import "Common.h"
 #import "MBProgressHUD.h"
+#import "CALayer+MyColor.h"
+
 @interface BaseViewController : UIViewController
 {
 @private
@@ -26,6 +28,7 @@
 
 @property (nonatomic, retain) UIButton *btnBack;
 @property (nonatomic, retain) UILabel *lblTitle;
+@property (nonatomic, assign) NSInteger page;
 /*
  方法说明:
  添加并显示等待条

@@ -28,6 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.navigationItem.title = @"选择城市";
     [self.cityTableView registerNib:[UINib nibWithNibName:@"CityTableViewCell" bundle:nil] forCellReuseIdentifier:@"CityTableViewCell"];
     [self.cityTableView registerNib:[UINib nibWithNibName:@"LocalCityTableViewCell" bundle:nil] forCellReuseIdentifier:@"LocalCityTableViewCell"];
     _cityTableView.sectionIndexColor = kBlackColor;
@@ -62,32 +63,67 @@
    
     
     __weak typeof(self) weakSelf = self;
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"city" ofType:@"json"];
+    NSData *date = [NSData dataWithContentsOfFile:path];
+    NSDictionary *dicResult = [NSJSONSerialization JSONObjectWithData:date options:0 error:0];
     
-    //GCD执行耗时操作
-    [SendRequest startRequestWithParam:dic andFinishBlock:^(id result) {
-        NSArray *city = result[@"City_list"];
-        weakSelf.dataArr = [NSMutableArray arrayWithArray:city];
-        NSMutableDictionary *hotDic = [[NSMutableDictionary alloc]init];
-        [hotDic setObject:result[@"Hot_list"] forKey:@"CityList"];
-        [hotDic setObject:@"#" forKey:@"Letter"];
-        [weakSelf.dataArr insertObject:hotDic atIndex:0];
-        
-        NSMutableDictionary *localDic = [[NSMutableDictionary alloc]init];
-        [localDic setObject:weakSelf.historyArray forKey:@"CityList"];
-        [localDic setObject:@"!" forKey:@"Letter"];
-        [weakSelf.dataArr insertObject:localDic atIndex:0];
-        [weakSelf.cityTableView reloadData];
-        if (weakSelf.isChina) {
-             self.cityChinaArr(city);
-        }else{
-            self.cityAbroadArr(city);
-        }
+//    NSDictionary *dicResult = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"city" ofType:@"json"]];
+    NSString *resultStr = dicResult[@"Data"];
+    
+    NSData *JSONData = [resultStr dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *result = [NSJSONSerialization JSONObjectWithData:JSONData options:NSJSONReadingMutableLeaves error:nil];
+    
+//    NSString *result = parseJSONStringToNSDictionary
+    NSLog(@"%@",result);
+    
+    NSLog(@"%@",result[@"Hot_list"]);
+    
+    NSLog(@"%@",result[@"City_list"]);
+    
+    NSArray *city = result[@"City_list"];
+    weakSelf.dataArr = [NSMutableArray arrayWithArray:city];
+    NSMutableDictionary *hotDic = [[NSMutableDictionary alloc]init];
+    [hotDic setObject:result[@"Hot_list"] forKey:@"CityList"];
+    [hotDic setObject:@"#" forKey:@"Letter"];
+    [weakSelf.dataArr insertObject:hotDic atIndex:0];
+    
+    NSMutableDictionary *localDic = [[NSMutableDictionary alloc]init];
+    [localDic setObject:weakSelf.historyArray forKey:@"CityList"];
+    [localDic setObject:@"!" forKey:@"Letter"];
+    [weakSelf.dataArr insertObject:localDic atIndex:0];
+    [weakSelf.cityTableView reloadData];
+//    if (weakSelf.isChina) {
+//        self.cityChinaArr(city);
+//    }else{
+//        self.cityAbroadArr(city);
+//    }
 
-       
-
-    } andFaild:^(NSDictionary *dic) {
-        
-    }];
+    
+//    //GCD执行耗时操作
+//    [SendRequest startRequestWithParam:dic andFinishBlock:^(id result) {
+//        NSArray *city = result[@"City_list"];
+//        weakSelf.dataArr = [NSMutableArray arrayWithArray:city];
+//        NSMutableDictionary *hotDic = [[NSMutableDictionary alloc]init];
+//        [hotDic setObject:result[@"Hot_list"] forKey:@"CityList"];
+//        [hotDic setObject:@"#" forKey:@"Letter"];
+//        [weakSelf.dataArr insertObject:hotDic atIndex:0];
+//        
+//        NSMutableDictionary *localDic = [[NSMutableDictionary alloc]init];
+//        [localDic setObject:weakSelf.historyArray forKey:@"CityList"];
+//        [localDic setObject:@"!" forKey:@"Letter"];
+//        [weakSelf.dataArr insertObject:localDic atIndex:0];
+//        [weakSelf.cityTableView reloadData];
+//        if (weakSelf.isChina) {
+//             self.cityChinaArr(city);
+//        }else{
+//            self.cityAbroadArr(city);
+//        }
+//
+//       
+//
+//    } andFaild:^(NSDictionary *dic) {
+//        
+//    }];
 
 }
 /*
@@ -174,7 +210,7 @@
     }else if (indexPath.section == 1) {
         NSArray *nowArr =  self.dataArr[indexPath.section][@"CityList"];
         if (nowArr.count%4 == 0) {
-            return 43*(nowArr.count/4) ;
+            return 43*(nowArr.count/4) + 20;
         }else{
             return 43*(nowArr.count/4 + 1) + 20 ;
         }

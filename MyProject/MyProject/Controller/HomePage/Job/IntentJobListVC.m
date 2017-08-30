@@ -1,95 +1,104 @@
 //
-//  CommitVC.m
+//  IntentJobListVC.m
 //  MyProject
 //
 //  Created by jiaming yan on 2017/8/21.
 //  Copyright © 2017年 yanjiaming. All rights reserved.
 //
 
-#import "MatchingJobListVC.h"
-#import "JobTableViewCell.h"
-#import "MatchingJobListTopicTableViewCell.h"
-#import "SelectButtonView.h"
-#import "CompanyView.h"
+#import "IntentJobListVC.h"
+#import "IntentJobListTableViewCell.h"
+#import "AddJobVC.h"
 
-@interface MatchingJobListVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface IntentJobListVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic)  NSMutableArray *arrData;//图片名数组
-@property (weak, nonatomic) IBOutlet SelectButtonView *jobTypeView;
-@property (weak, nonatomic) IBOutlet CompanyView *companyView;
-@property (weak, nonatomic) IBOutlet SelectButtonView *salaryView;
 
 @end
 
-@implementation MatchingJobListVC
+@implementation IntentJobListVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.navigationItem.title = @"匹配职位";
-    [self.tableView registerNib:[UINib nibWithNibName:@"MatchingJobListTopicTableViewCell" bundle:nil] forCellReuseIdentifier:@"MatchingJobListTopicTableViewCell"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"JobTableViewCell" bundle:nil] forCellReuseIdentifier:@"JobTableViewCell"];
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
+    self.navigationItem.title = @"求职意向";
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setImage:IMAGE(@"添加") forState:UIControlStateNormal];
+    button.frame = CGRectMake(0, 0, 40, 40);
+    [button addTarget:self action:@selector(addButtonClick) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *barItem = [[UIBarButtonItem alloc]initWithCustomView:button];
+    UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]
+                                       initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+                                       target:nil action:nil];
+    
+    negativeSpacer.width = -10;
+    self.navigationItem.rightBarButtonItems = @[negativeSpacer,barItem];
+    [self.tableView registerNib:[UINib nibWithNibName:@"IntentJobListTableViewCell" bundle:nil] forCellReuseIdentifier:@"IntentJobListTableViewCell"];
+    
     self.tableView.tableFooterView = [[UIView alloc]init];
-    self.tableView.estimatedRowHeight = 117.0f;
-    self.tableView.rowHeight = UITableViewAutomaticDimension;
+//    self.tableView.estimatedRowHeight = 117.0f;
+//    self.tableView.rowHeight = UITableViewAutomaticDimension;
     [self downRefreshRequest];
     [self upRefreshRequest];
-    
-    self.jobTypeView.buttonArr = @[@"全职",@"兼职",@"实习"];
-    self.jobTypeView.titleStr = @"工作性质";
-    self.jobTypeView.selectSure = ^(NSInteger index){
-        SaintiLog(@"点击了第%zd个了啊",index);
-    };
-    self.companyView.titleStr = @[@"公司筛选",@"公司筛选1"];
-    self.companyView.buttonArr = @[@[@"全部",@"未融资",@"天使轮",@"A轮",@"B轮",@"C轮",@"D轮以上",@"已上市",@"不需要融资"],@[@"全部",@"0-20人",@"20-99人",@"100-499人",@"500-999人",@"10000人以上"]];
-    
-    self.companyView.selectSure = ^(NSMutableArray  *selectIndexArr){
-        SaintiLog(@"点击了第%@个了啊",selectIndexArr);
-    };
-    
-    self.salaryView.buttonArr = @[@"全部",@"3K以下",@"3K-5K",@"5K-8K",@"8K-10K",@"10K-12K",@"12K-15K",@"15K以上"];
-    self.salaryView.titleStr = @"薪资";
-    self.salaryView.selectSure = ^(NSInteger index){
-        SaintiLog(@"点击了第%zd个了啊",index);
-    };
+}
+-(void)addButtonClick{
+    AddJobVC *addJob = [[AddJobVC alloc]init];
+    [self.navigationController pushViewController:addJob animated:YES];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 13;self.arrData.count;
+    return 4;self.arrData.count;
 }
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    return 117;
-//}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 77;
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    if (indexPath.row != 2) {
-        static NSString *identifier = @"JobTableViewCell";
-        JobTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-        cell.selectionStyle =  UITableViewCellSelectionStyleNone;
-        
-        return cell;
-    }else{
-        static NSString *identifier = @"MatchingJobListTopicTableViewCell";
-        MatchingJobListTopicTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-        cell.selectionStyle =  UITableViewCellSelectionStyleNone;
-        
-        return cell;
-    }
     
+    static NSString *identifier = @"IntentJobListTableViewCell";
+    IntentJobListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    cell.selectionStyle =  UITableViewCellSelectionStyleNone;
+    [cell.selectButton addTarget:self action:@selector(selectButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    return cell;
     
 }
 
 
 - (void )tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
-
     
 }
-
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+//        [dataArray removeObjectAtIndex:indexPath.row];
+        // Delete the row from the data source.
+//        [testTableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
+    }
+    else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+    }
+}
+/*
+ 方法描述:
+ 选择按钮点击事件
+ 
+ 参数说明:
+ <#参数说明#>
+ 
+ 返回结果:
+ <#返回结果#>
+ 
+ */
+-(void)selectButtonClick:(UIButton *)sender{
+    sender.selected = !sender.selected;
+}
 #pragma mark -
 #pragma mark 下拉刷新
 - (void)downRefreshRequest //内部方法改
@@ -167,22 +176,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-- (IBAction)typeButtonClick:(UIButton *)sender {
-
-    if (sender.tag == 0) {
-        [self.companyView close];
-        [self.salaryView close];
-        [self.jobTypeView changeView];
-    }else if (sender.tag == 1) {
-        [self.jobTypeView close];
-        [self.salaryView close];
-        [self.companyView changeView];
-    }else if (sender.tag == 2) {
-        [self.jobTypeView close];
-        [self.companyView close];
-        [self.salaryView changeView];
-    }
 }
 
 /*

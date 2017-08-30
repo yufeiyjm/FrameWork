@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HomePageVC.h"
-#import "ForecastTowVC.h"
+#import "YJMNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -21,14 +21,40 @@
     // Override point for customization after application launch.
      self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self gotoHome];
-     [self.window makeKeyAndVisible];
     return YES;
 }
 -(void)gotoHome{
     
-    HomePageVC *vc = [[HomePageVC alloc]init];
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
-    self.window.rootViewController = nav;
+    HomePageVC *homePage = [[HomePageVC alloc]init];
+    YJMNavigationController *homeNav = [[YJMNavigationController alloc]initWithRootViewController:homePage];
+    //    homeNav.navigationBarHidden = YES;
+    homeNav.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"包您入职" image:IMAGE(@"包您入职（未选中）") selectedImage:IMAGE(@"包您入职（未选中）")];
+    
+    
+    HomePageVC *homePage1 = [[HomePageVC alloc]init];
+    YJMNavigationController *homeNav1 = [[YJMNavigationController alloc]initWithRootViewController:homePage1];
+    homeNav1.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"测评" image:IMAGE(@"测评（未选中）") selectedImage:IMAGE(@"测评（未选中）")];
+    
+    HomePageVC *homePage2 = [[HomePageVC alloc]init];
+    YJMNavigationController *homeNav2 = [[YJMNavigationController alloc]initWithRootViewController:homePage2];
+    homeNav2.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"职场八卦" image:IMAGE(@"职场八卦（未选中）") selectedImage:IMAGE(@"职场八卦（未选中）")];
+    
+    HomePageVC *chatController = [[HomePageVC alloc]init];
+    //    chatController.hidesBottomBarWhenPushed = YES;
+    //    chatController.lblTitle.text = @"客服";
+    
+    //    MessageListVC *homePage3 = [[MessageListVC alloc]init];
+    YJMNavigationController *homeNav3 = [[YJMNavigationController alloc]initWithRootViewController:chatController];
+    homeNav3.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"职来职往" image:IMAGE(@"职来职往（未选中）") selectedImage:IMAGE(@"职来职往（未选中）")];
+    
+    self.tabbarController = [[UITabBarController alloc]init];
+    self.tabbarController.tabBar.tintColor = UIColorFromRGB(0x169eae);
+    self.tabbarController.delegate = self;
+    [self.tabbarController.tabBar setBarTintColor:kBlackColor];
+    self.tabbarController.viewControllers =[NSArray arrayWithObjects:homeNav,homeNav1,homeNav2,homeNav3, nil];
+    self.window.rootViewController = self.tabbarController;
+    [self.window makeKeyAndVisible];
+
    
 }
 

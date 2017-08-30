@@ -118,6 +118,18 @@
  */
 + (NSString *)messageTimeWithDate:(NSDate *)date;
 /*
+ 方法描述:
+ 获取label的宽度
+ 
+ 参数说明:
+ <#参数说明#>
+ 
+ 返回结果:
+ <#返回结果#>
+ 
+ */
++ (CGFloat )labelWidthWith:(UIFont *)font  title:(NSString *)title;
+/*
  方法说明:
  toast显示
  

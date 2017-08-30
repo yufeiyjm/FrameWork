@@ -7,8 +7,7 @@
 //
 
 #import "BaseViewController.h"
-#import "ZJScrollPageViewDelegate.h"
-@interface MyCityListViewController : BaseViewController<ZJScrollPageViewChildVcDelegate>
+@interface MyCityListViewController : BaseViewController
 @property(nonatomic,assign) BOOL isChina;
 @property(nonatomic,strong) void(^citySelected)(NSString *cityName,NSString *cityId);
 @property(nonatomic,strong) void(^cityChinaArr)(NSArray *cityArr);

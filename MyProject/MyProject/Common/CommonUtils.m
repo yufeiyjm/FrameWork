@@ -113,6 +113,24 @@
     return result;
 }
 /*
+ 方法描述:
+ 获取label的宽度
+ 
+ 参数说明:
+ <#参数说明#>
+ 
+ 返回结果:
+ <#返回结果#>
+ 
+ */
++ (CGFloat )labelWidthWith:(UIFont *)font title:(NSString *)title{
+    UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
+    lab.font = font;
+    lab.text = title;
+    [lab sizeToFit];
+    return lab.frame.size.width;
+}
+/*
  方法说明:
  判断当前是否有网络
  

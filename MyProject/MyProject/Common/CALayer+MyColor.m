@@ -9,5 +9,8 @@
 #import "CALayer+MyColor.h"
 
 @implementation CALayer (MyColor)
-
+- (void)setBorderColorWithUIColor:(UIColor *)color
+{
+    self.borderColor = color.CGColor;
+}
 @end

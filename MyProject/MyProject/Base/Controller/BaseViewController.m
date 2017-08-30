@@ -15,7 +15,10 @@
 
 #import "BaseViewController.h"
 #import "AppDelegate.h"
-@interface BaseViewController ()<UIGestureRecognizerDelegate>
+#import "UIScrollView+EmptyDataSet.h"
+
+
+@interface BaseViewController ()<UIGestureRecognizerDelegate,EmptyDataSetDelegate,EmptyDataSetSource>
 
 @end
 
@@ -33,19 +36,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = kWhiteColor;
+    self.view.backgroundColor = UIColorFromRGB(0xF2F5FA);
     //导航栏背景色
-    [self.navigationController.navigationBar setBarTintColor:UIColorFromRGB(0x0D84BF)];
+    [self.navigationController.navigationBar setBarTintColor:UIColorFromRGB(0xffffff)];
     //导航栏背景是否透明
     self.navigationController.navigationBar.translucent = NO;
 //    [self.navigationController.navigationBar setBackgroundImage:IMAGE(@"bg_navbar") forBarMetrics:UIBarMetricsDefault];
 //    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
 
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:kWhiteColor}];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],NSForegroundColorAttributeName:UIColorFromRGB(0x383f42)}];
     
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    backBtn.frame = CGRectMake(0, 0, 64, 44);
-    [backBtn setTitle:NSLocalizedString(@"Cancel", nil) forState:UIControlStateNormal];
+    backBtn.frame = CGRectMake(0, 0, 44, 44);
+//    [backBtn setTitle:NSLocalizedString(@"Cancel", nil) forState:UIControlStateNormal];
+    [backBtn setImage:IMAGE(@"返回") forState:UIControlStateNormal];
     [backBtn addTarget:self action:@selector(doBack:) forControlEvents:UIControlEventTouchUpInside];
     
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
@@ -53,7 +57,7 @@
                                        initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
                                        target:nil action:nil];
     
-    negativeSpacer.width = -10;
+    negativeSpacer.width = -18;
     self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:negativeSpacer,backItem, nil];
     self.navigationController.interactivePopGestureRecognizer.delegate = self;
 }

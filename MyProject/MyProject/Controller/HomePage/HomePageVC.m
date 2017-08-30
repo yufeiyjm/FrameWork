@@ -11,6 +11,8 @@
 #import "WorkTopicsTableViewCell.h"
 #import "CommitVC.h"
 #import "Q_AListVC.h"
+#import "SearchVC.h"
+#import "IntentJobListVC.h"
 
 @interface HomePageVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -78,7 +80,7 @@
 
 - (void )tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
-    Q_AListVC *vc = [[Q_AListVC alloc]init];
+    IntentJobListVC *vc = [[IntentJobListVC alloc]init];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }

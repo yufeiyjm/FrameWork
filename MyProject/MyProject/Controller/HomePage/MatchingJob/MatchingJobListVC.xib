@@ -11,7 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MatchingJobListVC">
             <connections>
+                <outlet property="companyView" destination="x6H-4b-4ME" id="P3T-G4-Hpa"/>
                 <outlet property="jobTypeView" destination="Gwc-We-e8B" id="qY8-6E-lmY"/>
+                <outlet property="salaryView" destination="Ywl-kc-dsR" id="88e-G0-v9Q"/>
                 <outlet property="tableView" destination="aby-00-QWM" id="pBy-TE-m0P"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -43,6 +45,9 @@
                                     <state key="normal" title="工作性质" image="下拉箭头">
                                         <color key="titleColor" red="0.42352941176470588" green="0.45098039215686275" blue="0.45490196078431372" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="typeButtonClick:" destination="-1" eventType="touchUpInside" id="fvz-6R-p5A"/>
+                                    </connections>
                                 </button>
                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GsU-wy-m8N">
                                     <rect key="frame" x="123" y="20" width="2" height="10"/>
@@ -67,12 +72,15 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wsh-u1-hW1">
                             <rect key="frame" x="125" y="0.0" width="125" height="50"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cub-Pz-BzV" customClass="YJMTitleButton">
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cub-Pz-BzV" customClass="YJMTitleButton">
                                     <rect key="frame" x="0.0" y="0.0" width="123" height="50"/>
                                     <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
                                     <state key="normal" title="公司筛选" image="下拉箭头">
                                         <color key="titleColor" red="0.42352941176470588" green="0.45098039215686275" blue="0.45490196078431372" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="typeButtonClick:" destination="-1" eventType="touchUpInside" id="b6l-N2-ycL"/>
+                                    </connections>
                                 </button>
                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yxo-rU-kFo">
                                     <rect key="frame" x="123" y="20" width="2" height="10"/>
@@ -97,12 +105,15 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NiO-cH-yjv">
                             <rect key="frame" x="250" y="0.0" width="125" height="50"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7s-vK-RJR" customClass="YJMTitleButton">
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7s-vK-RJR" customClass="YJMTitleButton">
                                     <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
                                     <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
                                     <state key="normal" title="薪资" image="下拉箭头">
                                         <color key="titleColor" red="0.42352941176470588" green="0.45098039215686275" blue="0.45490196078431372" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="typeButtonClick:" destination="-1" eventType="touchUpInside" id="Jrq-mJ-3Zy"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -145,25 +156,39 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gwc-We-e8B" customClass="SelectButtonView">
-                    <rect key="frame" x="0.0" y="50" width="375" height="163"/>
+                    <rect key="frame" x="0.0" y="50" width="375" height="617"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="163" id="5GD-2v-81t"/>
-                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x6H-4b-4ME" customClass="CompanyView">
+                    <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ywl-kc-dsR" customClass="SelectButtonView">
+                    <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="aby-00-QWM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="34S-2E-nkP"/>
+                <constraint firstItem="Ywl-kc-dsR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3HP-RH-9WE"/>
+                <constraint firstAttribute="trailing" secondItem="x6H-4b-4ME" secondAttribute="trailing" id="5Of-3F-6sx"/>
+                <constraint firstAttribute="trailing" secondItem="Ywl-kc-dsR" secondAttribute="trailing" id="5cD-nN-df7"/>
                 <constraint firstAttribute="bottom" secondItem="aby-00-QWM" secondAttribute="bottom" id="61x-Qu-e7e"/>
+                <constraint firstAttribute="bottom" secondItem="x6H-4b-4ME" secondAttribute="bottom" id="7Ng-qe-RRO"/>
                 <constraint firstAttribute="trailing" secondItem="Gwc-We-e8B" secondAttribute="trailing" id="BKZ-kI-xV2"/>
                 <constraint firstAttribute="trailing" secondItem="aby-00-QWM" secondAttribute="trailing" id="BxZ-Yi-zM7"/>
                 <constraint firstItem="xZj-yw-Vvx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="E5F-NU-hXX"/>
+                <constraint firstItem="Ywl-kc-dsR" firstAttribute="top" secondItem="xZj-yw-Vvx" secondAttribute="bottom" id="HE2-zU-1Rr"/>
                 <constraint firstItem="Gwc-We-e8B" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="HO7-nb-yRs"/>
+                <constraint firstAttribute="bottom" secondItem="Ywl-kc-dsR" secondAttribute="bottom" id="KYl-Mf-pKB"/>
                 <constraint firstItem="aby-00-QWM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aHg-2h-RcA"/>
                 <constraint firstItem="Gwc-We-e8B" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fEV-SE-aqC"/>
+                <constraint firstItem="x6H-4b-4ME" firstAttribute="top" secondItem="xZj-yw-Vvx" secondAttribute="bottom" id="iBp-oD-tiB"/>
                 <constraint firstAttribute="trailing" secondItem="xZj-yw-Vvx" secondAttribute="trailing" id="lYI-ld-QdS"/>
+                <constraint firstAttribute="bottom" secondItem="Gwc-We-e8B" secondAttribute="bottom" id="pio-pp-kPp"/>
                 <constraint firstItem="xZj-yw-Vvx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="t6b-kp-a0r"/>
+                <constraint firstItem="x6H-4b-4ME" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xeT-S0-tec"/>
             </constraints>
         </view>
     </objects>
