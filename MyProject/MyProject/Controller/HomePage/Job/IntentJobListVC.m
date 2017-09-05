@@ -8,7 +8,7 @@
 
 #import "IntentJobListVC.h"
 #import "IntentJobListTableViewCell.h"
-#import "AddJobVC.h"
+#import "AddJobNewVC.h"
 
 @interface IntentJobListVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -42,7 +42,7 @@
     [self upRefreshRequest];
 }
 -(void)addButtonClick{
-    AddJobVC *addJob = [[AddJobVC alloc]init];
+    AddJobNewVC *addJob = [[AddJobNewVC alloc]init];
     [self.navigationController pushViewController:addJob animated:YES];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

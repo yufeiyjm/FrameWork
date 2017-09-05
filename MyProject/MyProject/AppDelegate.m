@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HomePageVC.h"
 #import "YJMNavigationController.h"
+#import "AssessmentHomeVC.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
      self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [self gotoHome];
     return YES;
 }
@@ -31,7 +33,7 @@
     homeNav.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"包您入职" image:IMAGE(@"包您入职（未选中）") selectedImage:IMAGE(@"包您入职（未选中）")];
     
     
-    HomePageVC *homePage1 = [[HomePageVC alloc]init];
+    AssessmentHomeVC *homePage1 = [[AssessmentHomeVC alloc]init];
     YJMNavigationController *homeNav1 = [[YJMNavigationController alloc]initWithRootViewController:homePage1];
     homeNav1.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"测评" image:IMAGE(@"测评（未选中）") selectedImage:IMAGE(@"测评（未选中）")];
     

@@ -13,11 +13,18 @@
 #import "Q_AListVC.h"
 #import "SearchVC.h"
 #import "IntentJobListVC.h"
+#import "Q_AListVC.h"
+#import "SearchVC.h"
+#import "MatchingJobListVC.h"
+#import "IntentJobListVC.h"
 
 @interface HomePageVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic)  NSMutableArray *arrData;//图片名数组
+@property (weak, nonatomic) IBOutlet UIView *cirque;
+@property (weak, nonatomic) IBOutlet UIView *circelBackView;
 
+@property (strong, nonatomic) IBOutlet UIView *topView;
 @end
 
 @implementation HomePageVC
@@ -25,9 +32,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    UIView *topView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 285)];
-    topView.backgroundColor = kBlackColor;
-    self.tableView.tableHeaderView = topView;
+    self.topView.frame = CGRectMake(0, 0, kScreenWidth, 372);
+    self.tableView.tableHeaderView = self.topView;
     self.navigationController.navigationBarHidden = YES;
     /**372*/
     [self.tableView registerNib:[UINib nibWithNibName:@"JobTableViewCell" bundle:nil] forCellReuseIdentifier:@"JobTableViewCell"];
@@ -40,10 +46,33 @@
     [self upRefreshRequest];
 
 
-    
+    CAShapeLayer *layer = [CAShapeLayer new];
+    layer.lineWidth = 10;
+    //圆环的颜色
+    layer.strokeColor = UIColorFromRGB(0x1AB1C0).CGColor;
+    //背景填充色
+    layer.fillColor = [UIColor clearColor].CGColor;
+    //设置半径为10
+    CGFloat radius = 60;
+    //按照顺时针方向
+    BOOL clockWise = true;
+    SaintiLog(@"%f----%f",self.cirque.center.x,self.cirque.center.y);
+    //初始化一个路径
+    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(78 , 78 - 1 ) radius:radius startAngle:(2*M_PI) endAngle:3.3*M_PI clockwise:clockWise];
+    layer.path = [path CGPath];
+    [self.circelBackView.layer addSublayer:layer];
  
 
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+}
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+}
+
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 2;
@@ -52,9 +81,26 @@
     
     return 3;self.arrData.count;
 }
+- (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    UIView *aView = [[UIView alloc]init];
+    aView.backgroundColor = UIColorFromRGB(0xE5EDEE);
+    return aView;
+}
+- (nullable UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    UIView *aView = [[UIView alloc]init];
+    aView.backgroundColor = UIColorFromRGB(0xE5EDEE);
+    return aView;
+}
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    if (section == 0) {
+        return 0.01;
+    }
     return 10;
 }
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 0.01;
+}
+
 //- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 //{
 //    return 117;
@@ -80,7 +126,7 @@
 
 - (void )tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
-    IntentJobListVC *vc = [[IntentJobListVC alloc]init];
+    Q_AListVC *vc = [[Q_AListVC alloc]init];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
@@ -162,6 +208,43 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+#pragma mark ------搜索
+- (IBAction)searchButtonClick:(id)sender {
+    SearchVC *vc = [[SearchVC alloc]init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+#pragma mark ------消息
+- (IBAction)messageButtonClick:(id)sender {
+}
+#pragma mark ------我的
+- (IBAction)mineButtonClick:(id)sender {
+}
+#pragma mark ------求职意向
+- (IBAction)workTopicsClick:(id)sender {
+    IntentJobListVC *vc = [[IntentJobListVC alloc]init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+#pragma mark ------个人简历
+- (IBAction)resumeClick:(id)sender {
+}
+#pragma mark ------ABLE评测
+- (IBAction)evaluatingClick:(id)sender {
+}
+#pragma mark ------匹配意向职位
+- (IBAction)matchingJobClick:(id)sender {
+    MatchingJobListVC *vc = [[MatchingJobListVC alloc]init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+#pragma mark ------智能匹配职位
+- (IBAction)intelligentMatchJobClick:(id)sender {
+    MatchingJobListVC *vc = [[MatchingJobListVC alloc]init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 /*

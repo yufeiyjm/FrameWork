@@ -9,7 +9,7 @@
 #import "SearchVC.h"
 #import "HXTagAttribute.h"
 #import "HXTagsView.h"
-#import "DesiredJobVC.h"
+#import "SearchListVC.h"
 @interface SearchVC ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *searchTextField;
 @property (weak, nonatomic) IBOutlet UIImageView *searchImageView;
@@ -32,6 +32,8 @@
     
     _historyView.completion = ^(NSArray *selectTags,NSInteger currentIndex) {
         NSLog(@"selectTags:%@ currentIndex:%ld",selectTags, (long)currentIndex);
+        SearchListVC *vc = [[SearchListVC alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
     };
     _historyView.layout.scrollDirection = UICollectionViewScrollDirectionVertical;
     _historyView.layout.itemSize = CGSizeMake(100.0f, 30.0f);
@@ -57,6 +59,9 @@
     
     _hotView.completion = ^(NSArray *selectTags,NSInteger currentIndex) {
         NSLog(@"selectTags:%@ currentIndex:%ld",selectTags, (long)currentIndex);
+        
+        SearchListVC *vc = [[SearchListVC alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
     };
     _hotView.layout.scrollDirection = UICollectionViewScrollDirectionVertical;
     _hotView.layout.itemSize = CGSizeMake(100.0f, 30.0f);
@@ -83,7 +88,7 @@
     self.searchImageView.hidden = YES;
 }
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
-    DesiredJobVC *vc = [[DesiredJobVC alloc]init];
+    SearchListVC *vc = [[SearchListVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
     return YES;
 }

@@ -9,13 +9,17 @@
 #import "Q_ADetailVC.h"
 #import "Q_ADetailListTableViewCell.h"
 #import "MatchingJobListVC.h"
+#import "HeadCollectionViewCell.h"
+#import "PraiseListVC.h"
 
-@interface Q_ADetailVC ()<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate,UIScrollViewDelegate>
+@interface Q_ADetailVC ()<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate,UIScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource>
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic)  NSMutableArray *arrData;//图片名数组
 @property (weak, nonatomic) IBOutlet UITextField *commitTextField;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *sendBottom;
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
+@property (strong, nonatomic) IBOutlet UIView *tableViewHead;
 
 @end
 
@@ -31,6 +35,24 @@
     self.tableView.tableFooterView = [[UIView alloc]init];
     self.tableView.estimatedRowHeight = 117.0f;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableViewHead.frame = CGRectMake(0, 0, kScreenWidth, 195);
+    self.tableView.tableHeaderView = self.tableViewHead;
+    
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    flowLayout.minimumInteritemSpacing = 0;
+    flowLayout.minimumLineSpacing = 10;
+    flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    flowLayout.sectionInset = UIEdgeInsetsZero;
+    flowLayout.itemSize = CGSizeMake(28, 28);
+    flowLayout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    _collectionView.collectionViewLayout = flowLayout;
+    _collectionView.pagingEnabled = YES;
+    _collectionView.backgroundColor = [UIColor clearColor];
+    _collectionView.showsHorizontalScrollIndicator = NO;
+    [_collectionView registerNib:[UINib nibWithNibName:@"HeadCollectionViewCell" bundle:nil]  forCellWithReuseIdentifier:@"HeadCollectionViewCell"];
+    
+    
+    
     [self downRefreshRequest];
     [self upRefreshRequest];
     
@@ -87,6 +109,34 @@
     
     return 13;self.arrData.count;
 }
+
+#pragma mark ---- UICollectionViewDataSource
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return  6;
+}
+
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString * CellIdentifier = @"HeadCollectionViewCell";
+    
+    HeadCollectionViewCell *cell  = [collectionView dequeueReusableCellWithReuseIdentifier: CellIdentifier forIndexPath:indexPath];
+//    if (indexPath.row == self.selectIndex) {
+//        cell.titleLabel.backgroundColor = UIColorFromRGB(0x1EB0C1);
+//        cell.titleLabel.textColor = kWhiteColor;
+//    }else{
+//        cell.titleLabel.backgroundColor = kWhiteColor;
+//        cell.titleLabel.textColor = UIColorFromRGB(0x1EB0C1);
+//    }
+    return cell;
+    
+}
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+
+}
+
 
 //- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 //{
@@ -195,6 +245,10 @@
     
 }
 - (IBAction)zanClick:(id)sender {
+}
+- (IBAction)morePeopleClick:(id)sender {
+    PraiseListVC *vc = [[PraiseListVC alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
