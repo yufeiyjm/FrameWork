@@ -10,6 +10,7 @@
 #import "HomePageVC.h"
 #import "YJMNavigationController.h"
 #import "AssessmentHomeVC.h"
+#import "GossipListVC.h"
 
 @interface AppDelegate ()
 
@@ -37,7 +38,7 @@
     YJMNavigationController *homeNav1 = [[YJMNavigationController alloc]initWithRootViewController:homePage1];
     homeNav1.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"测评" image:IMAGE(@"测评（未选中）") selectedImage:IMAGE(@"测评（未选中）")];
     
-    HomePageVC *homePage2 = [[HomePageVC alloc]init];
+    GossipListVC *homePage2 = [[GossipListVC alloc]init];
     YJMNavigationController *homeNav2 = [[YJMNavigationController alloc]initWithRootViewController:homePage2];
     homeNav2.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"职场八卦" image:IMAGE(@"职场八卦（未选中）") selectedImage:IMAGE(@"职场八卦（未选中）")];
     

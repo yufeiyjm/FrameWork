@@ -133,11 +133,25 @@
 		74EAAA7A1F5E687E00F1098D /* AddJobNewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74EAAA781F5E687E00F1098D /* AddJobNewVC.xib */; };
 		74EAAA7E1F5E688E00F1098D /* SearchListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EAAA7C1F5E688E00F1098D /* SearchListVC.m */; };
 		74EAAA7F1F5E688E00F1098D /* SearchListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74EAAA7D1F5E688E00F1098D /* SearchListVC.xib */; };
+		74EAAA831F5E70EF00F1098D /* SelectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EAAA811F5E70EF00F1098D /* SelectTableViewCell.m */; };
+		74EAAA841F5E70EF00F1098D /* SelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74EAAA821F5E70EF00F1098D /* SelectTableViewCell.xib */; };
+		74EAAA881F5E711C00F1098D /* SelectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EAAA861F5E711C00F1098D /* SelectVC.m */; };
+		74EAAA891F5E711C00F1098D /* SelectVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74EAAA871F5E711C00F1098D /* SelectVC.xib */; };
 		74FA24EF1F4ABF4A00C7ADEB /* HXTagAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FA24E61F4ABF4A00C7ADEB /* HXTagAttribute.m */; };
 		74FA24F01F4ABF4A00C7ADEB /* HXTagCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FA24E81F4ABF4A00C7ADEB /* HXTagCollectionViewCell.m */; };
 		74FA24F11F4ABF4A00C7ADEB /* HXTagCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FA24EA1F4ABF4A00C7ADEB /* HXTagCollectionViewFlowLayout.m */; };
 		74FA24F21F4ABF4A00C7ADEB /* HXTagsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FA24EC1F4ABF4A00C7ADEB /* HXTagsCell.m */; };
 		74FA24F31F4ABF4A00C7ADEB /* HXTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FA24EE1F4ABF4A00C7ADEB /* HXTagsView.m */; };
+		74FC5F591F5EA0E3006574A3 /* GossipListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FC5F571F5EA0E3006574A3 /* GossipListVC.m */; };
+		74FC5F5A1F5EA0E3006574A3 /* GossipListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74FC5F581F5EA0E3006574A3 /* GossipListVC.xib */; };
+		74FC5F5E1F5F8A70006574A3 /* GossipListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FC5F5C1F5F8A70006574A3 /* GossipListTableViewCell.m */; };
+		74FC5F5F1F5F8A70006574A3 /* GossipListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74FC5F5D1F5F8A70006574A3 /* GossipListTableViewCell.xib */; };
+		74FC5F681F5F9ABA006574A3 /* MHFacebookImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FC5F621F5F9ABA006574A3 /* MHFacebookImageViewer.m */; };
+		74FC5F691F5F9ABA006574A3 /* Done.png in Resources */ = {isa = PBXBuildFile; fileRef = 74FC5F641F5F9ABA006574A3 /* Done.png */; };
+		74FC5F6A1F5F9ABA006574A3 /* Done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74FC5F651F5F9ABA006574A3 /* Done@2x.png */; };
+		74FC5F6B1F5F9ABA006574A3 /* UIImageView+MHFacebookImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FC5F671F5F9ABA006574A3 /* UIImageView+MHFacebookImageViewer.m */; };
+		74FC5F6F1F5FA52A006574A3 /* GossipDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FC5F6D1F5FA52A006574A3 /* GossipDetailVC.m */; };
+		74FC5F701F5FA52A006574A3 /* GossipDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74FC5F6E1F5FA52A006574A3 /* GossipDetailVC.xib */; };
 		A6F0C9301ED315AA0061D41D /* LGLCalendarDate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F0C91E1ED315AA0061D41D /* LGLCalendarDate.m */; };
 		A6F0C9311ED315AA0061D41D /* LGLCalenderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F0C9201ED315AA0061D41D /* LGLCalenderCell.m */; };
 		A6F0C9321ED315AA0061D41D /* LGLCalenderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F0C9221ED315AA0061D41D /* LGLCalenderModel.m */; };
@@ -225,10 +239,6 @@
 		A6F160A51E72388700F8DBA4 /* welcom4.png in Resources */ = {isa = PBXBuildFile; fileRef = A6F1602E1E72388700F8DBA4 /* welcom4.png */; };
 		A6F160A61E72388700F8DBA4 /* YJMGuideViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F160311E72388700F8DBA4 /* YJMGuideViewCell.m */; };
 		A6F160A71E72388700F8DBA4 /* YJMGuideViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F160331E72388700F8DBA4 /* YJMGuideViewManager.m */; };
-		A6F160A81E72388700F8DBA4 /* MHFacebookImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F160371E72388700F8DBA4 /* MHFacebookImageViewer.m */; };
-		A6F160A91E72388700F8DBA4 /* Done.png in Resources */ = {isa = PBXBuildFile; fileRef = A6F160391E72388700F8DBA4 /* Done.png */; };
-		A6F160AA1E72388700F8DBA4 /* Done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6F1603A1E72388700F8DBA4 /* Done@2x.png */; };
-		A6F160AB1E72388700F8DBA4 /* UIImageView+MHFacebookImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1603C1E72388700F8DBA4 /* UIImageView+MHFacebookImageViewer.m */; };
 		A6F160AC1E72388700F8DBA4 /* OrderDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1603F1E72388700F8DBA4 /* OrderDemoVC.m */; };
 		A6F160AD1E72388700F8DBA4 /* OrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F160411E72388700F8DBA4 /* OrderListViewController.m */; };
 		A6F160AE1E72388700F8DBA4 /* OrderListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6F160421E72388700F8DBA4 /* OrderListViewController.xib */; };
@@ -464,6 +474,12 @@
 		74EAAA7B1F5E688E00F1098D /* SearchListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchListVC.h; sourceTree = "<group>"; };
 		74EAAA7C1F5E688E00F1098D /* SearchListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchListVC.m; sourceTree = "<group>"; };
 		74EAAA7D1F5E688E00F1098D /* SearchListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchListVC.xib; sourceTree = "<group>"; };
+		74EAAA801F5E70EF00F1098D /* SelectTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectTableViewCell.h; sourceTree = "<group>"; };
+		74EAAA811F5E70EF00F1098D /* SelectTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectTableViewCell.m; sourceTree = "<group>"; };
+		74EAAA821F5E70EF00F1098D /* SelectTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectTableViewCell.xib; sourceTree = "<group>"; };
+		74EAAA851F5E711C00F1098D /* SelectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectVC.h; sourceTree = "<group>"; };
+		74EAAA861F5E711C00F1098D /* SelectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectVC.m; sourceTree = "<group>"; };
+		74EAAA871F5E711C00F1098D /* SelectVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectVC.xib; sourceTree = "<group>"; };
 		74FA24E51F4ABF4A00C7ADEB /* HXTagAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXTagAttribute.h; sourceTree = "<group>"; };
 		74FA24E61F4ABF4A00C7ADEB /* HXTagAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXTagAttribute.m; sourceTree = "<group>"; };
 		74FA24E71F4ABF4A00C7ADEB /* HXTagCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXTagCollectionViewCell.h; sourceTree = "<group>"; };
@@ -474,6 +490,21 @@
 		74FA24EC1F4ABF4A00C7ADEB /* HXTagsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXTagsCell.m; sourceTree = "<group>"; };
 		74FA24ED1F4ABF4A00C7ADEB /* HXTagsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXTagsView.h; sourceTree = "<group>"; };
 		74FA24EE1F4ABF4A00C7ADEB /* HXTagsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXTagsView.m; sourceTree = "<group>"; };
+		74FC5F561F5EA0E3006574A3 /* GossipListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GossipListVC.h; sourceTree = "<group>"; };
+		74FC5F571F5EA0E3006574A3 /* GossipListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GossipListVC.m; sourceTree = "<group>"; };
+		74FC5F581F5EA0E3006574A3 /* GossipListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GossipListVC.xib; sourceTree = "<group>"; };
+		74FC5F5B1F5F8A70006574A3 /* GossipListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GossipListTableViewCell.h; sourceTree = "<group>"; };
+		74FC5F5C1F5F8A70006574A3 /* GossipListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GossipListTableViewCell.m; sourceTree = "<group>"; };
+		74FC5F5D1F5F8A70006574A3 /* GossipListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GossipListTableViewCell.xib; sourceTree = "<group>"; };
+		74FC5F611F5F9ABA006574A3 /* MHFacebookImageViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHFacebookImageViewer.h; sourceTree = "<group>"; };
+		74FC5F621F5F9ABA006574A3 /* MHFacebookImageViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHFacebookImageViewer.m; sourceTree = "<group>"; };
+		74FC5F641F5F9ABA006574A3 /* Done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Done.png; sourceTree = "<group>"; };
+		74FC5F651F5F9ABA006574A3 /* Done@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Done@2x.png"; sourceTree = "<group>"; };
+		74FC5F661F5F9ABA006574A3 /* UIImageView+MHFacebookImageViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MHFacebookImageViewer.h"; sourceTree = "<group>"; };
+		74FC5F671F5F9ABA006574A3 /* UIImageView+MHFacebookImageViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MHFacebookImageViewer.m"; sourceTree = "<group>"; };
+		74FC5F6C1F5FA52A006574A3 /* GossipDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GossipDetailVC.h; sourceTree = "<group>"; };
+		74FC5F6D1F5FA52A006574A3 /* GossipDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GossipDetailVC.m; sourceTree = "<group>"; };
+		74FC5F6E1F5FA52A006574A3 /* GossipDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GossipDetailVC.xib; sourceTree = "<group>"; };
 		776109CF493740EAE5EBCA4F /* Pods-MyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyProject/Pods-MyProject.debug.xcconfig"; sourceTree = "<group>"; };
 		801BC318443CA7C911B1C5C2 /* libPods-MyProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F0C91D1ED315AA0061D41D /* LGLCalendarDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGLCalendarDate.h; sourceTree = "<group>"; };
@@ -590,12 +621,6 @@
 		A6F160311E72388700F8DBA4 /* YJMGuideViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJMGuideViewCell.m; sourceTree = "<group>"; };
 		A6F160321E72388700F8DBA4 /* YJMGuideViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJMGuideViewManager.h; sourceTree = "<group>"; };
 		A6F160331E72388700F8DBA4 /* YJMGuideViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJMGuideViewManager.m; sourceTree = "<group>"; };
-		A6F160361E72388700F8DBA4 /* MHFacebookImageViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHFacebookImageViewer.h; sourceTree = "<group>"; };
-		A6F160371E72388700F8DBA4 /* MHFacebookImageViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHFacebookImageViewer.m; sourceTree = "<group>"; };
-		A6F160391E72388700F8DBA4 /* Done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Done.png; sourceTree = "<group>"; };
-		A6F1603A1E72388700F8DBA4 /* Done@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Done@2x.png"; sourceTree = "<group>"; };
-		A6F1603B1E72388700F8DBA4 /* UIImageView+MHFacebookImageViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MHFacebookImageViewer.h"; sourceTree = "<group>"; };
-		A6F1603C1E72388700F8DBA4 /* UIImageView+MHFacebookImageViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MHFacebookImageViewer.m"; sourceTree = "<group>"; };
 		A6F1603E1E72388700F8DBA4 /* OrderDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDemoVC.h; sourceTree = "<group>"; };
 		A6F1603F1E72388700F8DBA4 /* OrderDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDemoVC.m; sourceTree = "<group>"; };
 		A6F160401E72388700F8DBA4 /* OrderListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderListViewController.h; sourceTree = "<group>"; };
@@ -965,6 +990,12 @@
 				74EAAA6D1F5E686B00F1098D /* SceneExaminationTableViewCell.h */,
 				74EAAA6E1F5E686B00F1098D /* SceneExaminationTableViewCell.m */,
 				74EAAA6F1F5E686B00F1098D /* SceneExaminationTableViewCell.xib */,
+				74EAAA851F5E711C00F1098D /* SelectVC.h */,
+				74EAAA861F5E711C00F1098D /* SelectVC.m */,
+				74EAAA871F5E711C00F1098D /* SelectVC.xib */,
+				74EAAA801F5E70EF00F1098D /* SelectTableViewCell.h */,
+				74EAAA811F5E70EF00F1098D /* SelectTableViewCell.m */,
+				74EAAA821F5E70EF00F1098D /* SelectTableViewCell.xib */,
 			);
 			path = Assessment;
 			sourceTree = "<group>";
@@ -1024,6 +1055,43 @@
 				74FA24EE1F4ABF4A00C7ADEB /* HXTagsView.m */,
 			);
 			path = "标签";
+			sourceTree = "<group>";
+		};
+		74FC5F551F5EA0D5006574A3 /* Gossip */ = {
+			isa = PBXGroup;
+			children = (
+				74FC5F561F5EA0E3006574A3 /* GossipListVC.h */,
+				74FC5F571F5EA0E3006574A3 /* GossipListVC.m */,
+				74FC5F581F5EA0E3006574A3 /* GossipListVC.xib */,
+				74FC5F5B1F5F8A70006574A3 /* GossipListTableViewCell.h */,
+				74FC5F5C1F5F8A70006574A3 /* GossipListTableViewCell.m */,
+				74FC5F5D1F5F8A70006574A3 /* GossipListTableViewCell.xib */,
+				74FC5F6C1F5FA52A006574A3 /* GossipDetailVC.h */,
+				74FC5F6D1F5FA52A006574A3 /* GossipDetailVC.m */,
+				74FC5F6E1F5FA52A006574A3 /* GossipDetailVC.xib */,
+			);
+			path = Gossip;
+			sourceTree = "<group>";
+		};
+		74FC5F601F5F9ABA006574A3 /* FaceBook */ = {
+			isa = PBXGroup;
+			children = (
+				74FC5F611F5F9ABA006574A3 /* MHFacebookImageViewer.h */,
+				74FC5F621F5F9ABA006574A3 /* MHFacebookImageViewer.m */,
+				74FC5F631F5F9ABA006574A3 /* Resources */,
+				74FC5F661F5F9ABA006574A3 /* UIImageView+MHFacebookImageViewer.h */,
+				74FC5F671F5F9ABA006574A3 /* UIImageView+MHFacebookImageViewer.m */,
+			);
+			path = FaceBook;
+			sourceTree = "<group>";
+		};
+		74FC5F631F5F9ABA006574A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				74FC5F641F5F9ABA006574A3 /* Done.png */,
+				74FC5F651F5F9ABA006574A3 /* Done@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A6F0C91C1ED315AA0061D41D /* LGLCalender */ = {
@@ -1219,6 +1287,7 @@
 		A6F160161E72388700F8DBA4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				74FC5F551F5EA0D5006574A3 /* Gossip */,
 				746920841F579235001C1467 /* MySelf */,
 				7469207E1F568E92001C1467 /* Assessment */,
 				7435D7981F4D70810089D61A /* HomePage */,
@@ -1304,30 +1373,8 @@
 		A6F160341E72388700F8DBA4 /* ImageDetail */ = {
 			isa = PBXGroup;
 			children = (
-				A6F160351E72388700F8DBA4 /* FaceBook */,
 			);
 			path = ImageDetail;
-			sourceTree = "<group>";
-		};
-		A6F160351E72388700F8DBA4 /* FaceBook */ = {
-			isa = PBXGroup;
-			children = (
-				A6F160361E72388700F8DBA4 /* MHFacebookImageViewer.h */,
-				A6F160371E72388700F8DBA4 /* MHFacebookImageViewer.m */,
-				A6F160381E72388700F8DBA4 /* Resources */,
-				A6F1603B1E72388700F8DBA4 /* UIImageView+MHFacebookImageViewer.h */,
-				A6F1603C1E72388700F8DBA4 /* UIImageView+MHFacebookImageViewer.m */,
-			);
-			path = FaceBook;
-			sourceTree = "<group>";
-		};
-		A6F160381E72388700F8DBA4 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				A6F160391E72388700F8DBA4 /* Done.png */,
-				A6F1603A1E72388700F8DBA4 /* Done@2x.png */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		A6F1603D1E72388700F8DBA4 /* OrderDemo */ = {
@@ -1362,6 +1409,7 @@
 		A6F160481E72388700F8DBA4 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				74FC5F601F5F9ABA006574A3 /* FaceBook */,
 				74FA24E41F4ABF4A00C7ADEB /* 标签 */,
 				744D93B61F4A860900BB4DDF /* EmptyDataSet */,
 				A6F0C91C1ED315AA0061D41D /* LGLCalender */,
@@ -1519,10 +1567,10 @@
 			files = (
 				740FCE091ED6B92C00AA7E8A /* Localizable.strings in Resources */,
 				7435D7E31F4D70810089D61A /* MatchingJobListVC.xib in Resources */,
-				A6F160A91E72388700F8DBA4 /* Done.png in Resources */,
 				747EB8DA1F4AB8000015E8D3 /* DINCondensed.ttf in Resources */,
 				A6F15FCA1E722AC700F8DBA4 /* LaunchScreen.storyboard in Resources */,
 				A6F160A51E72388700F8DBA4 /* welcom4.png in Resources */,
+				74FC5F5A1F5EA0E3006574A3 /* GossipListVC.xib in Resources */,
 				A6F1607F1E72388700F8DBA4 /* 图层-32@2x.png in Resources */,
 				A6F1606F1E72388700F8DBA4 /* 图层-18@2x.png in Resources */,
 				7435D7ED1F4D70810089D61A /* WorkTopicsTableViewCell.xib in Resources */,
@@ -1532,7 +1580,9 @@
 				A6F160981E72388700F8DBA4 /* 图层-8@2x.png in Resources */,
 				74EAAA661F5E686100F1098D /* MySelfVC.xib in Resources */,
 				A6F160701E72388700F8DBA4 /* 图层-19@2x.png in Resources */,
+				74FC5F5F1F5F8A70006574A3 /* GossipListTableViewCell.xib in Resources */,
 				A6F160731E72388700F8DBA4 /* 图层-21@2x.png in Resources */,
+				74FC5F701F5FA52A006574A3 /* GossipDetailVC.xib in Resources */,
 				7469205A1F56642D001C1467 /* JobDetailVC.xib in Resources */,
 				741E96851EA09C690073B1C5 /* AAHighchartsMore.js in Resources */,
 				7435D7D31F4D70810089D61A /* CommitVC.xib in Resources */,
@@ -1545,6 +1595,7 @@
 				7444652B1F55570B00C866EE /* LocalCityTableViewCell.xib in Resources */,
 				A6F160861E72388700F8DBA4 /* 图层-39@2x.png in Resources */,
 				7444652F1F55573800C866EE /* city.json in Resources */,
+				74EAAA891F5E711C00F1098D /* SelectVC.xib in Resources */,
 				A6F160691E72388700F8DBA4 /* 图层-12@2x.png in Resources */,
 				74AEA2521F53F5CF003FED3F /* DesiredJobVC.xib in Resources */,
 				A6F160BA1E72388700F8DBA4 /* 专题（点击）@2x.png in Resources */,
@@ -1575,10 +1626,12 @@
 				A6F160831E72388700F8DBA4 /* 图层-36@2x.png in Resources */,
 				7435D7EB1F4D70810089D61A /* Q_AListVC.xib in Resources */,
 				A6F160821E72388700F8DBA4 /* 图层-35@2x.png in Resources */,
+				74EAAA841F5E70EF00F1098D /* SelectTableViewCell.xib in Resources */,
 				A6F1608C1E72388700F8DBA4 /* 图层-44@2x.png in Resources */,
 				A6F1609D1E72388700F8DBA4 /* BannerVC.xib in Resources */,
 				A6F1607A1E72388700F8DBA4 /* 图层-28@2x.png in Resources */,
 				A6F160A31E72388700F8DBA4 /* welcom2.png in Resources */,
+				74FC5F691F5F9ABA006574A3 /* Done.png in Resources */,
 				A6F160A41E72388700F8DBA4 /* welcom3.png in Resources */,
 				A6F1606B1E72388700F8DBA4 /* 图层-14@2x.png in Resources */,
 				A6F1607D1E72388700F8DBA4 /* 图层-30@2x.png in Resources */,
@@ -1594,6 +1647,7 @@
 				A6F160A11E72388700F8DBA4 /* EmojiVC.xib in Resources */,
 				A6F160771E72388700F8DBA4 /* 图层-25@2x.png in Resources */,
 				A6F160A21E72388700F8DBA4 /* welcom1.png in Resources */,
+				74FC5F6A1F5F9ABA006574A3 /* Done@2x.png in Resources */,
 				A6F160941E72388700F8DBA4 /* 图层-51@2x.png in Resources */,
 				A6F1608E1E72388700F8DBA4 /* 图层-46@2x.png in Resources */,
 				A6F160631E72388700F8DBA4 /* noData@2x.png in Resources */,
@@ -1601,7 +1655,6 @@
 				7435D7DF1F4D70810089D61A /* JobTableViewCell.xib in Resources */,
 				A6F15FC71E722AC700F8DBA4 /* Assets.xcassets in Resources */,
 				A6F15FC51E722AC700F8DBA4 /* Main.storyboard in Resources */,
-				A6F160AA1E72388700F8DBA4 /* Done@2x.png in Resources */,
 				A6F160901E72388700F8DBA4 /* 图层-48@2x.png in Resources */,
 				74EAAA7A1F5E687E00F1098D /* AddJobNewVC.xib in Resources */,
 				A6F160921E72388700F8DBA4 /* 图层-4@2x.png in Resources */,
@@ -1693,8 +1746,8 @@
 			files = (
 				741E968C1EA09C690073B1C5 /* AADataLabels.m in Sources */,
 				A6F0C9351ED315AA0061D41D /* LGLHeaderView.m in Sources */,
+				74EAAA881F5E711C00F1098D /* SelectVC.m in Sources */,
 				7444652C1F55570B00C866EE /* CityTableViewCell.m in Sources */,
-				A6F160A81E72388700F8DBA4 /* MHFacebookImageViewer.m in Sources */,
 				7435D7951F4D17480089D61A /* SelectButtonView.m in Sources */,
 				741E96AC1EA0DD860073B1C5 /* BEMAverageLine.m in Sources */,
 				741E96981EA09C690073B1C5 /* AASeriesElement.m in Sources */,
@@ -1703,6 +1756,7 @@
 				74FA24F11F4ABF4A00C7ADEB /* HXTagCollectionViewFlowLayout.m in Sources */,
 				A6F160A01E72388700F8DBA4 /* EmojiVC.m in Sources */,
 				A6F0C9381ED315AA0061D41D /* XLPlainFlowLayout.m in Sources */,
+				74FC5F6F1F5FA52A006574A3 /* GossipDetailVC.m in Sources */,
 				A6F160AD1E72388700F8DBA4 /* OrderListViewController.m in Sources */,
 				A6F160AF1E72388700F8DBA4 /* StarRatingVC.m in Sources */,
 				746920591F56642D001C1467 /* JobDetailVC.m in Sources */,
@@ -1732,11 +1786,11 @@
 				A6F160B51E72388700F8DBA4 /* SaintiNetWork.m in Sources */,
 				74EAAA651F5E686100F1098D /* MySelfVC.m in Sources */,
 				74EAAA701F5E686B00F1098D /* AssessmentHomeVC.m in Sources */,
-				A6F160AB1E72388700F8DBA4 /* UIImageView+MHFacebookImageViewer.m in Sources */,
 				74FA24F31F4ABF4A00C7ADEB /* HXTagsView.m in Sources */,
 				741E962D1EA064A80073B1C5 /* MSSCalendarManager.m in Sources */,
 				746920781F568919001C1467 /* HeadCollectionViewCell.m in Sources */,
 				74AEA2511F53F5CF003FED3F /* DesiredJobVC.m in Sources */,
+				74FC5F6B1F5F9ABA006574A3 /* UIImageView+MHFacebookImageViewer.m in Sources */,
 				74FA24EF1F4ABF4A00C7ADEB /* HXTagAttribute.m in Sources */,
 				741E96961EA09C690073B1C5 /* AAPlotOptions.m in Sources */,
 				741E962F1EA064A80073B1C5 /* MSSCalendarViewController.m in Sources */,
@@ -1744,6 +1798,7 @@
 				A6F160A71E72388700F8DBA4 /* YJMGuideViewManager.m in Sources */,
 				7435D7E41F4D70810089D61A /* Q&AListTableViewCell.m in Sources */,
 				74DFCC341F5646EB0029FD98 /* IntentJobListVC.m in Sources */,
+				74FC5F681F5F9ABA006574A3 /* MHFacebookImageViewer.m in Sources */,
 				741E969F1EA09C690073B1C5 /* AAYAxis.m in Sources */,
 				741E968B1EA09C690073B1C5 /* AAColumn.m in Sources */,
 				744D93B91F4A860900BB4DDF /* UIScrollView+EmptyDataSet.m in Sources */,
@@ -1769,6 +1824,7 @@
 				741E96B01EA0DD860073B1C5 /* BEMSimpleLineGraphView.m in Sources */,
 				7469207C1F568919001C1467 /* PraiseListVC.m in Sources */,
 				74DFCC221F5646C40029FD98 /* CompanyDetailVC.m in Sources */,
+				74FC5F591F5EA0E3006574A3 /* GossipListVC.m in Sources */,
 				7435D78E1F4CFDBC0089D61A /* CALayer+MyColor.m in Sources */,
 				741E962C1EA064A80073B1C5 /* MSSCalendarHeaderModel.m in Sources */,
 				741E969D1EA09C690073B1C5 /* AATooltip.m in Sources */,
@@ -1787,6 +1843,7 @@
 				7435D7EC1F4D70810089D61A /* WorkTopicsTableViewCell.m in Sources */,
 				7435D7E61F4D70810089D61A /* Q_ADetailListTableViewCell.m in Sources */,
 				7435D7D01F4D70810089D61A /* CommitTableViewCell.m in Sources */,
+				74FC5F5E1F5F8A70006574A3 /* GossipListTableViewCell.m in Sources */,
 				741E96111E9F986A0073B1C5 /* TimeSelectView.m in Sources */,
 				74EAAA7E1F5E688E00F1098D /* SearchListVC.m in Sources */,
 				74B47FD41F4E63910045D776 /* CompanyView.m in Sources */,
@@ -1806,6 +1863,7 @@
 				741E969A1EA09C690073B1C5 /* AAStyle.m in Sources */,
 				A6F0C9331ED315AA0061D41D /* LGLCalenderSubModel.m in Sources */,
 				7469207A1F568919001C1467 /* PraiseListTableViewCell.m in Sources */,
+				74EAAA831F5E70EF00F1098D /* SelectTableViewCell.m in Sources */,
 				7435D7EA1F4D70810089D61A /* Q_AListVC.m in Sources */,
 				A6F1609C1E72388700F8DBA4 /* BannerVC.m in Sources */,
 				A6F15FBC1E722AC700F8DBA4 /* main.m in Sources */,

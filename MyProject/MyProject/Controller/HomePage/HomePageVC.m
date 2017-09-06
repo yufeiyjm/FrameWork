@@ -230,6 +230,9 @@
 }
 #pragma mark ------个人简历
 - (IBAction)resumeClick:(id)sender {
+    Q_AListVC *vc = [[Q_AListVC alloc]init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark ------ABLE评测
 - (IBAction)evaluatingClick:(id)sender {

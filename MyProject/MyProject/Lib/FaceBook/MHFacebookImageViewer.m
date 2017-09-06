@@ -27,6 +27,7 @@
 //#import "UIImageView+AFNetworking.h"
 #import <objc/runtime.h>
 #import <UIImageView+WebCache.h>
+#import "AppDelegate.h"
 static const CGFloat kMinBlackMaskAlpha = 0.3f;
 static const CGFloat kMaxImageScale = 2.5f;
 static const CGFloat kMinImageScale = 1.0f;
@@ -107,18 +108,23 @@ static const CGFloat kMinImageScale = 1.0f;
     __block MHFacebookImageViewerCell * _justMeInsideTheBlock = self;
     __block UIScrollView * _scrollViewInsideBlock = __scrollView;
     
-    [__imageView sd_setImageWithURL:imageURL placeholderImage:defaultImage options:SDWebImageCacheMemoryOnly progress:^(NSInteger receivedSize, NSInteger expectedSize) {
-        
-        
-    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        //                [MBProgressHUD hideHUDForView:cell.imgPic];
-        [_scrollViewInsideBlock setZoomScale:1.0f animated:YES];
-        [_imageViewInTheBlock setImage:image];
-        _imageViewInTheBlock.frame = [_justMeInsideTheBlock centerFrameFromImage:_imageViewInTheBlock.image];
-        
+    [__imageView sd_setImageWithURL:imageURL completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+                [_scrollViewInsideBlock setZoomScale:1.0f animated:YES];
+                [_imageViewInTheBlock setImage:image];
+                _imageViewInTheBlock.frame = [_justMeInsideTheBlock centerFrameFromImage:_imageViewInTheBlock.image];
     }];
+//    [__imageView sd_setImageWithURL:imageURL placeholderImage:defaultImage options:SDWebImageCacheMemoryOnly progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+//        
+//        
+//    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+//        //                [MBProgressHUD hideHUDForView:cell.imgPic];
+//        [_scrollViewInsideBlock setZoomScale:1.0f animated:YES];
+//        [_imageViewInTheBlock setImage:image];
+//        _imageViewInTheBlock.frame = [_justMeInsideTheBlock centerFrameFromImage:_imageViewInTheBlock.image];
+//        
+//    }];
     
-    //        [__imageView setImageWithURLRequest:[NSURLRequest requestWithURL:imageURL] placeholderImage:defaultImage success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+    //        [__imageView setImageWithURLRequest:[NSURLRequest requestWithURL:imageURL] placeholderImage:defaultImage success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {/Users/ricky/Desktop/FrameWork2.0/FrameWork2.0/Controller/Demo/ImageDetail/FaceBook/MHFacebookImageViewer.m:113:17: Incompatible block pointer types sending 'void (^)(UIImage *__strong, NSError *__strong, SDImageCacheType, NSURL *__strong)' to parameter of type 'EMSDWebImageCompletionBlock' (aka 'void (^)(UIImage *__strong, NSError *__strong, EMSDImageCacheType, NSURL *__strong)')
     //            [_scrollViewInsideBlock setZoomScale:1.0f animated:YES];
     //            [_imageViewInTheBlock setImage:image];
     //            _imageViewInTheBlock.frame = [_justMeInsideTheBlock centerFrameFromImage:_imageViewInTheBlock.image];
@@ -160,7 +166,7 @@ static const CGFloat kMinImageScale = 1.0f;
     _panGesture.cancelsTouchesInView = NO;
     _panGesture.delegate = self;
     __weak UITableView * weakSuperView = (UITableView*) view.superview.superview.superview.superview.superview;
-    //    [weakSuperView.panGestureRecognizer requireGestureRecognizerToFail:_panGesture];
+//        [weakSuperView.panGestureRecognizer requireGestureRecognizerToFail:_panGesture];
     [view addGestureRecognizer:_panGesture];
     [_gestures addObject:_panGesture];
     
@@ -571,7 +577,7 @@ static const CGFloat kMinImageScale = 1.0f;
     
     _blackMask = [[UIView alloc] initWithFrame:windowBounds];
     _blackMask.backgroundColor = [UIColor blackColor];
-    _blackMask.alpha = 0.0f;
+    _blackMask.alpha = 1.0f;
     _blackMask.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     [
      self.view insertSubview:_blackMask atIndex:0];
@@ -693,7 +699,7 @@ static const CGFloat kMinImageScale = 1.0f;
     }else{
         msg = @"图片保存成功" ;
     }
-    MBProgressHUD *loading = [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:YES];
+    MBProgressHUD *loading = [MBProgressHUD showHUDAddedTo:((AppDelegate *)([UIApplication sharedApplication].delegate)).window animated:YES];
     loading.mode = MBProgressHUDModeText;
     loading.color = [UIColor blackColor];
     loading.labelText = msg;
@@ -703,7 +709,7 @@ static const CGFloat kMinImageScale = 1.0f;
 }
 
 - (void)delayMethod:(id)obj{
-    [MBProgressHUD hideHUDForView:[UIApplication sharedApplication].keyWindow animated:YES];
+    [MBProgressHUD hideHUDForView:((AppDelegate *)([UIApplication sharedApplication].delegate)).window animated:YES];
 }
 - (void)handleSingleTap1232{
     [UIView animateWithDuration:0.3 animations:^{
@@ -719,7 +725,7 @@ static const CGFloat kMinImageScale = 1.0f;
 - (void)presentFromRootViewController
 {
     
-    UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    UIViewController *rootViewController = ((AppDelegate *)([UIApplication sharedApplication].delegate)).window.rootViewController;
     [self presentFromViewController:rootViewController];
     _isFirst = YES;
 }
@@ -727,7 +733,7 @@ static const CGFloat kMinImageScale = 1.0f;
 - (void)presentFromViewController:(UIViewController *)controller
 {
     _rootViewController = controller;
-    [[[[UIApplication sharedApplication]windows]objectAtIndex:0]addSubview:self.view];
+    [((AppDelegate *)([UIApplication sharedApplication].delegate)).window addSubview:self.view];
     [controller addChildViewController:self];
     [self didMoveToParentViewController:controller];
 }
