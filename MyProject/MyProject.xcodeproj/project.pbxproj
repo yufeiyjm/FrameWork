@@ -152,6 +152,8 @@
 		74FC5F6B1F5F9ABA006574A3 /* UIImageView+MHFacebookImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FC5F671F5F9ABA006574A3 /* UIImageView+MHFacebookImageViewer.m */; };
 		74FC5F6F1F5FA52A006574A3 /* GossipDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FC5F6D1F5FA52A006574A3 /* GossipDetailVC.m */; };
 		74FC5F701F5FA52A006574A3 /* GossipDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74FC5F6E1F5FA52A006574A3 /* GossipDetailVC.xib */; };
+		74FC5F741F5FCD07006574A3 /* ArticleDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FC5F721F5FCD07006574A3 /* ArticleDetailVC.m */; };
+		74FC5F751F5FCD07006574A3 /* ArticleDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74FC5F731F5FCD07006574A3 /* ArticleDetailVC.xib */; };
 		A6F0C9301ED315AA0061D41D /* LGLCalendarDate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F0C91E1ED315AA0061D41D /* LGLCalendarDate.m */; };
 		A6F0C9311ED315AA0061D41D /* LGLCalenderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F0C9201ED315AA0061D41D /* LGLCalenderCell.m */; };
 		A6F0C9321ED315AA0061D41D /* LGLCalenderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F0C9221ED315AA0061D41D /* LGLCalenderModel.m */; };
@@ -505,6 +507,9 @@
 		74FC5F6C1F5FA52A006574A3 /* GossipDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GossipDetailVC.h; sourceTree = "<group>"; };
 		74FC5F6D1F5FA52A006574A3 /* GossipDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GossipDetailVC.m; sourceTree = "<group>"; };
 		74FC5F6E1F5FA52A006574A3 /* GossipDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GossipDetailVC.xib; sourceTree = "<group>"; };
+		74FC5F711F5FCD07006574A3 /* ArticleDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleDetailVC.h; sourceTree = "<group>"; };
+		74FC5F721F5FCD07006574A3 /* ArticleDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleDetailVC.m; sourceTree = "<group>"; };
+		74FC5F731F5FCD07006574A3 /* ArticleDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleDetailVC.xib; sourceTree = "<group>"; };
 		776109CF493740EAE5EBCA4F /* Pods-MyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyProject/Pods-MyProject.debug.xcconfig"; sourceTree = "<group>"; };
 		801BC318443CA7C911B1C5C2 /* libPods-MyProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F0C91D1ED315AA0061D41D /* LGLCalendarDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGLCalendarDate.h; sourceTree = "<group>"; };
@@ -1069,6 +1074,9 @@
 				74FC5F6C1F5FA52A006574A3 /* GossipDetailVC.h */,
 				74FC5F6D1F5FA52A006574A3 /* GossipDetailVC.m */,
 				74FC5F6E1F5FA52A006574A3 /* GossipDetailVC.xib */,
+				74FC5F711F5FCD07006574A3 /* ArticleDetailVC.h */,
+				74FC5F721F5FCD07006574A3 /* ArticleDetailVC.m */,
+				74FC5F731F5FCD07006574A3 /* ArticleDetailVC.xib */,
 			);
 			path = Gossip;
 			sourceTree = "<group>";
@@ -1577,6 +1585,7 @@
 				744465291F55570B00C866EE /* MyCityListViewController.xib in Resources */,
 				74AEA2571F5408E0003FED3F /* DesiredJopCollectionViewCell.xib in Resources */,
 				74DFCC331F5646EB0029FD98 /* IntentJobListTableViewCell.xib in Resources */,
+				74FC5F751F5FCD07006574A3 /* ArticleDetailVC.xib in Resources */,
 				A6F160981E72388700F8DBA4 /* 图层-8@2x.png in Resources */,
 				74EAAA661F5E686100F1098D /* MySelfVC.xib in Resources */,
 				A6F160701E72388700F8DBA4 /* 图层-19@2x.png in Resources */,
@@ -1778,6 +1787,7 @@
 				741E96951EA09C690073B1C5 /* AAPlotLinesElement.m in Sources */,
 				741E96311EA064A80073B1C5 /* MSSCircleLabel.m in Sources */,
 				741E968E1EA09C690073B1C5 /* AALabels.m in Sources */,
+				74FC5F741F5FCD07006574A3 /* ArticleDetailVC.m in Sources */,
 				A6F160B61E72388700F8DBA4 /* SendRequest.m in Sources */,
 				A6F0C9371ED315AA0061D41D /* UIView+Frame.m in Sources */,
 				A6F0C9321ED315AA0061D41D /* LGLCalenderModel.m in Sources */,

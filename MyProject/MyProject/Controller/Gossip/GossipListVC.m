@@ -9,6 +9,7 @@
 #import "GossipListVC.h"
 #import "GossipListTableViewCell.h"
 #import "GossipDetailVC.h"
+#import "ArticleDetailVC.h"
 
 @interface GossipListVC ()
 <UITableViewDelegate,UITableViewDataSource>
@@ -175,6 +176,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)articleDetailClick:(UIButton *)sender {
+    ArticleDetailVC *vc= [[ArticleDetailVC alloc]init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 /*
