@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>IQKeyboardManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ImagePlayerView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -69,6 +74,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TPKeyboardAvoiding.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TZImagePickerController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>UICountingLabel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -82,17 +97,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>039D66555F71A8BD2781C30D25D71469</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>058F49DBFB22F4A0F7009785B920AA53</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>175B076ED45EB1A3E40F58BA14036467</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>436EC6A908A9D325A7AA311A0873CBE3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,7 +132,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9A1D06FF4E5A640B23B5FB523962E836</key>
+		<key>9650B5ADCE86F1A055FAFC635284BDB5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9C5A773FFF27BB16749150EEABEF6A3B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -137,6 +152,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>9E777523A65AEDBFCC68489C72241335</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A15E9CC995027D4B502B77E9EBE12B9F</key>
 		<dict>
 			<key>primary</key>
@@ -147,7 +167,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C9379DB36239CA8262CBBA577B849D9A</key>
+		<key>BC176D809FD75A99EBD2CCF741939588</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C099E23109390B6A803B3B9CD664C0B5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DF513DA797B87E5B0146F54E22361826</key>
 		<dict>
 			<key>primary</key>
 			<true/>

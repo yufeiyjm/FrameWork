@@ -17,6 +17,8 @@
 #import "SearchVC.h"
 #import "MatchingJobListVC.h"
 #import "IntentJobListVC.h"
+#import "MySelfVC.h"
+#import "MessageListVC.h"
 
 @interface HomePageVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -217,9 +219,17 @@
 }
 #pragma mark ------消息
 - (IBAction)messageButtonClick:(id)sender {
+    
+    MessageListVC *vc = [[MessageListVC alloc]init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark ------我的
 - (IBAction)mineButtonClick:(id)sender {
+    
+    MySelfVC *vc = [[MySelfVC alloc]init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark ------求职意向
 - (IBAction)workTopicsClick:(id)sender {

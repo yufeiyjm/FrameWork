@@ -10,6 +10,7 @@
 #import "GossipListTableViewCell.h"
 #import "GossipDetailVC.h"
 #import "ArticleDetailVC.h"
+#import "AddGossipVC.h"
 
 @interface GossipListVC ()
 <UITableViewDelegate,UITableViewDataSource>
@@ -179,6 +180,12 @@
 }
 - (IBAction)articleDetailClick:(UIButton *)sender {
     ArticleDetailVC *vc= [[ArticleDetailVC alloc]init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)AddGossipClick:(id)sender {
+    
+    AddGossipVC *vc= [[AddGossipVC alloc]init];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }

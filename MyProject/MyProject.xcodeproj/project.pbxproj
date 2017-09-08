@@ -121,6 +121,50 @@
 		74DFCC331F5646EB0029FD98 /* IntentJobListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DFCC291F5646EB0029FD98 /* IntentJobListTableViewCell.xib */; };
 		74DFCC341F5646EB0029FD98 /* IntentJobListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DFCC2B1F5646EB0029FD98 /* IntentJobListVC.m */; };
 		74DFCC351F5646EB0029FD98 /* IntentJobListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DFCC2C1F5646EB0029FD98 /* IntentJobListVC.xib */; };
+		74E36F241F6137ED0091C95C /* AddGossipVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F221F6137ED0091C95C /* AddGossipVC.m */; };
+		74E36F251F6137ED0091C95C /* AddGossipVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F231F6137ED0091C95C /* AddGossipVC.xib */; };
+		74E36F291F613BAC0091C95C /* AddGossipImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F271F613BAC0091C95C /* AddGossipImageCollectionViewCell.m */; };
+		74E36F2A1F613BAC0091C95C /* AddGossipImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F281F613BAC0091C95C /* AddGossipImageCollectionViewCell.xib */; };
+		74E36F2F1F6237D30091C95C /* MyCommitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F2D1F6237D30091C95C /* MyCommitVC.m */; };
+		74E36F301F6237D30091C95C /* MyCommitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F2E1F6237D30091C95C /* MyCommitVC.xib */; };
+		74E36F341F6237F20091C95C /* MyCommitTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F321F6237F20091C95C /* MyCommitTableViewCell.m */; };
+		74E36F351F6237F20091C95C /* MyCommitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F331F6237F20091C95C /* MyCommitTableViewCell.xib */; };
+		74E36F3A1F623BD10091C95C /* MyCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F381F623BD10091C95C /* MyCollectionVC.m */; };
+		74E36F3B1F623BD10091C95C /* MyCollectionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F391F623BD10091C95C /* MyCollectionVC.xib */; };
+		74E36F3F1F623C340091C95C /* MyTopicCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F3D1F623C340091C95C /* MyTopicCollectionVC.m */; };
+		74E36F401F623C340091C95C /* MyTopicCollectionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F3E1F623C340091C95C /* MyTopicCollectionVC.xib */; };
+		74E36F441F623C610091C95C /* MyJobCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F421F623C610091C95C /* MyJobCollectionVC.m */; };
+		74E36F451F623C610091C95C /* MyJobCollectionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F431F623C610091C95C /* MyJobCollectionVC.xib */; };
+		74E36F491F623C7C0091C95C /* MyTopicCollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F471F623C7C0091C95C /* MyTopicCollectionTableViewCell.m */; };
+		74E36F4A1F623C7C0091C95C /* MyTopicCollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F481F623C7C0091C95C /* MyTopicCollectionTableViewCell.xib */; };
+		74E36F4F1F62425F0091C95C /* MessageListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F4D1F62425F0091C95C /* MessageListTableViewCell.m */; };
+		74E36F501F62425F0091C95C /* MessageListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F4E1F62425F0091C95C /* MessageListTableViewCell.xib */; };
+		74E36F541F62426E0091C95C /* MessageListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F521F62426E0091C95C /* MessageListVC.m */; };
+		74E36F551F62426E0091C95C /* MessageListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F531F62426E0091C95C /* MessageListVC.xib */; };
+		74E36F5A1F6244DE0091C95C /* MyAttendTopicListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F581F6244DE0091C95C /* MyAttendTopicListVC.m */; };
+		74E36F5B1F6244DE0091C95C /* MyAttendTopicListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F591F6244DE0091C95C /* MyAttendTopicListVC.xib */; };
+		74E36F5F1F62450D0091C95C /* MyAttendTopicListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F5D1F62450D0091C95C /* MyAttendTopicListTableViewCell.m */; };
+		74E36F601F62450D0091C95C /* MyAttendTopicListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F5E1F62450D0091C95C /* MyAttendTopicListTableViewCell.xib */; };
+		74E36F651F62485B0091C95C /* FeedBackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F631F62485B0091C95C /* FeedBackVC.m */; };
+		74E36F661F62485B0091C95C /* FeedBackVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F641F62485B0091C95C /* FeedBackVC.xib */; };
+		74E36F6B1F62498E0091C95C /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F691F62498E0091C95C /* SettingVC.m */; };
+		74E36F6C1F62498E0091C95C /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F6A1F62498E0091C95C /* SettingVC.xib */; };
+		74E36F711F625C7D0091C95C /* InterviewEndListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F6F1F625C7D0091C95C /* InterviewEndListVC.m */; };
+		74E36F721F625C7D0091C95C /* InterviewEndListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F701F625C7D0091C95C /* InterviewEndListVC.xib */; };
+		74E36F761F625C950091C95C /* InterviewEndListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F741F625C950091C95C /* InterviewEndListTableViewCell.m */; };
+		74E36F771F625C950091C95C /* InterviewEndListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F751F625C950091C95C /* InterviewEndListTableViewCell.xib */; };
+		74E36F7B1F62623B0091C95C /* InterviewNOListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F791F62623B0091C95C /* InterviewNOListTableViewCell.m */; };
+		74E36F7C1F62623B0091C95C /* InterviewNOListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F7A1F62623B0091C95C /* InterviewNOListTableViewCell.xib */; };
+		74E36F801F6262510091C95C /* InterviewNOListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F7E1F6262510091C95C /* InterviewNOListVC.m */; };
+		74E36F811F6262510091C95C /* InterviewNOListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F7F1F6262510091C95C /* InterviewNOListVC.xib */; };
+		74E36F851F6266E90091C95C /* InterviewNOVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F831F6266E90091C95C /* InterviewNOVC.m */; };
+		74E36F861F6266E90091C95C /* InterviewNOVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F841F6266E90091C95C /* InterviewNOVC.xib */; };
+		74E36F8A1F626F6D0091C95C /* WaitUpVideoListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F881F626F6D0091C95C /* WaitUpVideoListVC.m */; };
+		74E36F8B1F626F6D0091C95C /* WaitUpVideoListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F891F626F6D0091C95C /* WaitUpVideoListVC.xib */; };
+		74E36F8F1F62703C0091C95C /* WaitUpVideoListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F8D1F62703C0091C95C /* WaitUpVideoListTableViewCell.m */; };
+		74E36F901F62703C0091C95C /* WaitUpVideoListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F8E1F62703C0091C95C /* WaitUpVideoListTableViewCell.xib */; };
+		74E36F941F6274540091C95C /* SubmittedJobVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36F921F6274540091C95C /* SubmittedJobVC.m */; };
+		74E36F951F6274540091C95C /* SubmittedJobVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E36F931F6274540091C95C /* SubmittedJobVC.xib */; };
 		74EAAA651F5E686100F1098D /* MySelfVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EAAA631F5E686100F1098D /* MySelfVC.m */; };
 		74EAAA661F5E686100F1098D /* MySelfVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74EAAA641F5E686100F1098D /* MySelfVC.xib */; };
 		74EAAA701F5E686B00F1098D /* AssessmentHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EAAA681F5E686B00F1098D /* AssessmentHomeVC.m */; };
@@ -458,6 +502,72 @@
 		74DFCC2A1F5646EB0029FD98 /* IntentJobListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntentJobListVC.h; sourceTree = "<group>"; };
 		74DFCC2B1F5646EB0029FD98 /* IntentJobListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntentJobListVC.m; sourceTree = "<group>"; };
 		74DFCC2C1F5646EB0029FD98 /* IntentJobListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntentJobListVC.xib; sourceTree = "<group>"; };
+		74E36F211F6137ED0091C95C /* AddGossipVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddGossipVC.h; sourceTree = "<group>"; };
+		74E36F221F6137ED0091C95C /* AddGossipVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGossipVC.m; sourceTree = "<group>"; };
+		74E36F231F6137ED0091C95C /* AddGossipVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddGossipVC.xib; sourceTree = "<group>"; };
+		74E36F261F613BAC0091C95C /* AddGossipImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddGossipImageCollectionViewCell.h; sourceTree = "<group>"; };
+		74E36F271F613BAC0091C95C /* AddGossipImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGossipImageCollectionViewCell.m; sourceTree = "<group>"; };
+		74E36F281F613BAC0091C95C /* AddGossipImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddGossipImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		74E36F2C1F6237D30091C95C /* MyCommitVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCommitVC.h; sourceTree = "<group>"; };
+		74E36F2D1F6237D30091C95C /* MyCommitVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCommitVC.m; sourceTree = "<group>"; };
+		74E36F2E1F6237D30091C95C /* MyCommitVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCommitVC.xib; sourceTree = "<group>"; };
+		74E36F311F6237F20091C95C /* MyCommitTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCommitTableViewCell.h; sourceTree = "<group>"; };
+		74E36F321F6237F20091C95C /* MyCommitTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCommitTableViewCell.m; sourceTree = "<group>"; };
+		74E36F331F6237F20091C95C /* MyCommitTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCommitTableViewCell.xib; sourceTree = "<group>"; };
+		74E36F371F623BD10091C95C /* MyCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionVC.h; sourceTree = "<group>"; };
+		74E36F381F623BD10091C95C /* MyCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionVC.m; sourceTree = "<group>"; };
+		74E36F391F623BD10091C95C /* MyCollectionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionVC.xib; sourceTree = "<group>"; };
+		74E36F3C1F623C340091C95C /* MyTopicCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTopicCollectionVC.h; sourceTree = "<group>"; };
+		74E36F3D1F623C340091C95C /* MyTopicCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTopicCollectionVC.m; sourceTree = "<group>"; };
+		74E36F3E1F623C340091C95C /* MyTopicCollectionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTopicCollectionVC.xib; sourceTree = "<group>"; };
+		74E36F411F623C610091C95C /* MyJobCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyJobCollectionVC.h; sourceTree = "<group>"; };
+		74E36F421F623C610091C95C /* MyJobCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyJobCollectionVC.m; sourceTree = "<group>"; };
+		74E36F431F623C610091C95C /* MyJobCollectionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyJobCollectionVC.xib; sourceTree = "<group>"; };
+		74E36F461F623C7C0091C95C /* MyTopicCollectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTopicCollectionTableViewCell.h; sourceTree = "<group>"; };
+		74E36F471F623C7C0091C95C /* MyTopicCollectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTopicCollectionTableViewCell.m; sourceTree = "<group>"; };
+		74E36F481F623C7C0091C95C /* MyTopicCollectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTopicCollectionTableViewCell.xib; sourceTree = "<group>"; };
+		74E36F4C1F62425F0091C95C /* MessageListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageListTableViewCell.h; sourceTree = "<group>"; };
+		74E36F4D1F62425F0091C95C /* MessageListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageListTableViewCell.m; sourceTree = "<group>"; };
+		74E36F4E1F62425F0091C95C /* MessageListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageListTableViewCell.xib; sourceTree = "<group>"; };
+		74E36F511F62426E0091C95C /* MessageListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageListVC.h; sourceTree = "<group>"; };
+		74E36F521F62426E0091C95C /* MessageListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageListVC.m; sourceTree = "<group>"; };
+		74E36F531F62426E0091C95C /* MessageListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageListVC.xib; sourceTree = "<group>"; };
+		74E36F571F6244DE0091C95C /* MyAttendTopicListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAttendTopicListVC.h; sourceTree = "<group>"; };
+		74E36F581F6244DE0091C95C /* MyAttendTopicListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAttendTopicListVC.m; sourceTree = "<group>"; };
+		74E36F591F6244DE0091C95C /* MyAttendTopicListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyAttendTopicListVC.xib; sourceTree = "<group>"; };
+		74E36F5C1F62450D0091C95C /* MyAttendTopicListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAttendTopicListTableViewCell.h; sourceTree = "<group>"; };
+		74E36F5D1F62450D0091C95C /* MyAttendTopicListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAttendTopicListTableViewCell.m; sourceTree = "<group>"; };
+		74E36F5E1F62450D0091C95C /* MyAttendTopicListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyAttendTopicListTableViewCell.xib; sourceTree = "<group>"; };
+		74E36F621F62485B0091C95C /* FeedBackVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedBackVC.h; sourceTree = "<group>"; };
+		74E36F631F62485B0091C95C /* FeedBackVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedBackVC.m; sourceTree = "<group>"; };
+		74E36F641F62485B0091C95C /* FeedBackVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedBackVC.xib; sourceTree = "<group>"; };
+		74E36F681F62498E0091C95C /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
+		74E36F691F62498E0091C95C /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
+		74E36F6A1F62498E0091C95C /* SettingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingVC.xib; sourceTree = "<group>"; };
+		74E36F6E1F625C7D0091C95C /* InterviewEndListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterviewEndListVC.h; sourceTree = "<group>"; };
+		74E36F6F1F625C7D0091C95C /* InterviewEndListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterviewEndListVC.m; sourceTree = "<group>"; };
+		74E36F701F625C7D0091C95C /* InterviewEndListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InterviewEndListVC.xib; sourceTree = "<group>"; };
+		74E36F731F625C950091C95C /* InterviewEndListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterviewEndListTableViewCell.h; sourceTree = "<group>"; };
+		74E36F741F625C950091C95C /* InterviewEndListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterviewEndListTableViewCell.m; sourceTree = "<group>"; };
+		74E36F751F625C950091C95C /* InterviewEndListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InterviewEndListTableViewCell.xib; sourceTree = "<group>"; };
+		74E36F781F62623B0091C95C /* InterviewNOListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterviewNOListTableViewCell.h; sourceTree = "<group>"; };
+		74E36F791F62623B0091C95C /* InterviewNOListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterviewNOListTableViewCell.m; sourceTree = "<group>"; };
+		74E36F7A1F62623B0091C95C /* InterviewNOListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InterviewNOListTableViewCell.xib; sourceTree = "<group>"; };
+		74E36F7D1F6262510091C95C /* InterviewNOListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterviewNOListVC.h; sourceTree = "<group>"; };
+		74E36F7E1F6262510091C95C /* InterviewNOListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterviewNOListVC.m; sourceTree = "<group>"; };
+		74E36F7F1F6262510091C95C /* InterviewNOListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InterviewNOListVC.xib; sourceTree = "<group>"; };
+		74E36F821F6266E90091C95C /* InterviewNOVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterviewNOVC.h; sourceTree = "<group>"; };
+		74E36F831F6266E90091C95C /* InterviewNOVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterviewNOVC.m; sourceTree = "<group>"; };
+		74E36F841F6266E90091C95C /* InterviewNOVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InterviewNOVC.xib; sourceTree = "<group>"; };
+		74E36F871F626F6D0091C95C /* WaitUpVideoListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitUpVideoListVC.h; sourceTree = "<group>"; };
+		74E36F881F626F6D0091C95C /* WaitUpVideoListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitUpVideoListVC.m; sourceTree = "<group>"; };
+		74E36F891F626F6D0091C95C /* WaitUpVideoListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaitUpVideoListVC.xib; sourceTree = "<group>"; };
+		74E36F8C1F62703C0091C95C /* WaitUpVideoListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitUpVideoListTableViewCell.h; sourceTree = "<group>"; };
+		74E36F8D1F62703C0091C95C /* WaitUpVideoListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitUpVideoListTableViewCell.m; sourceTree = "<group>"; };
+		74E36F8E1F62703C0091C95C /* WaitUpVideoListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaitUpVideoListTableViewCell.xib; sourceTree = "<group>"; };
+		74E36F911F6274540091C95C /* SubmittedJobVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmittedJobVC.h; sourceTree = "<group>"; };
+		74E36F921F6274540091C95C /* SubmittedJobVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmittedJobVC.m; sourceTree = "<group>"; };
+		74E36F931F6274540091C95C /* SubmittedJobVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmittedJobVC.xib; sourceTree = "<group>"; };
 		74EAAA621F5E686100F1098D /* MySelfVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySelfVC.h; sourceTree = "<group>"; };
 		74EAAA631F5E686100F1098D /* MySelfVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySelfVC.m; sourceTree = "<group>"; };
 		74EAAA641F5E686100F1098D /* MySelfVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySelfVC.xib; sourceTree = "<group>"; };
@@ -864,6 +974,8 @@
 		7435D7981F4D70810089D61A /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				74E36F4B1F62423A0091C95C /* Message */,
+				746920841F579235001C1467 /* MySelf */,
 				74DFCC0A1F5567E60029FD98 /* Job */,
 				74DFCC041F555D290029FD98 /* Company */,
 				7444651E1F5556FF00C866EE /* CityList */,
@@ -1011,8 +1123,15 @@
 				74EAAA621F5E686100F1098D /* MySelfVC.h */,
 				74EAAA631F5E686100F1098D /* MySelfVC.m */,
 				74EAAA641F5E686100F1098D /* MySelfVC.xib */,
+				74E36F671F62496B0091C95C /* Setting */,
+				74E36F6D1F625C660091C95C /* Interview */,
+				74E36F361F623BB80091C95C /* MyCollection */,
+				74E36F2B1F6237BF0091C95C /* MyCommit */,
+				74E36F561F6244AF0091C95C /* MyAttendTopic */,
+				74E36F611F6248450091C95C /* FeedBack */,
 			);
-			path = MySelf;
+			name = MySelf;
+			path = ../MySelf;
 			sourceTree = "<group>";
 		};
 		74DFCC041F555D290029FD98 /* Company */ = {
@@ -1043,6 +1162,118 @@
 				74DFCC2C1F5646EB0029FD98 /* IntentJobListVC.xib */,
 			);
 			path = Job;
+			sourceTree = "<group>";
+		};
+		74E36F2B1F6237BF0091C95C /* MyCommit */ = {
+			isa = PBXGroup;
+			children = (
+				74E36F2C1F6237D30091C95C /* MyCommitVC.h */,
+				74E36F2D1F6237D30091C95C /* MyCommitVC.m */,
+				74E36F2E1F6237D30091C95C /* MyCommitVC.xib */,
+				74E36F311F6237F20091C95C /* MyCommitTableViewCell.h */,
+				74E36F321F6237F20091C95C /* MyCommitTableViewCell.m */,
+				74E36F331F6237F20091C95C /* MyCommitTableViewCell.xib */,
+			);
+			name = MyCommit;
+			path = Commit;
+			sourceTree = "<group>";
+		};
+		74E36F361F623BB80091C95C /* MyCollection */ = {
+			isa = PBXGroup;
+			children = (
+				74E36F371F623BD10091C95C /* MyCollectionVC.h */,
+				74E36F381F623BD10091C95C /* MyCollectionVC.m */,
+				74E36F391F623BD10091C95C /* MyCollectionVC.xib */,
+				74E36F411F623C610091C95C /* MyJobCollectionVC.h */,
+				74E36F421F623C610091C95C /* MyJobCollectionVC.m */,
+				74E36F431F623C610091C95C /* MyJobCollectionVC.xib */,
+				74E36F3C1F623C340091C95C /* MyTopicCollectionVC.h */,
+				74E36F3D1F623C340091C95C /* MyTopicCollectionVC.m */,
+				74E36F3E1F623C340091C95C /* MyTopicCollectionVC.xib */,
+				74E36F461F623C7C0091C95C /* MyTopicCollectionTableViewCell.h */,
+				74E36F471F623C7C0091C95C /* MyTopicCollectionTableViewCell.m */,
+				74E36F481F623C7C0091C95C /* MyTopicCollectionTableViewCell.xib */,
+			);
+			path = MyCollection;
+			sourceTree = "<group>";
+		};
+		74E36F4B1F62423A0091C95C /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				74E36F511F62426E0091C95C /* MessageListVC.h */,
+				74E36F521F62426E0091C95C /* MessageListVC.m */,
+				74E36F531F62426E0091C95C /* MessageListVC.xib */,
+				74E36F4C1F62425F0091C95C /* MessageListTableViewCell.h */,
+				74E36F4D1F62425F0091C95C /* MessageListTableViewCell.m */,
+				74E36F4E1F62425F0091C95C /* MessageListTableViewCell.xib */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		74E36F561F6244AF0091C95C /* MyAttendTopic */ = {
+			isa = PBXGroup;
+			children = (
+				74E36F571F6244DE0091C95C /* MyAttendTopicListVC.h */,
+				74E36F581F6244DE0091C95C /* MyAttendTopicListVC.m */,
+				74E36F591F6244DE0091C95C /* MyAttendTopicListVC.xib */,
+				74E36F5C1F62450D0091C95C /* MyAttendTopicListTableViewCell.h */,
+				74E36F5D1F62450D0091C95C /* MyAttendTopicListTableViewCell.m */,
+				74E36F5E1F62450D0091C95C /* MyAttendTopicListTableViewCell.xib */,
+			);
+			name = MyAttendTopic;
+			path = Commit/MyAttendTopic;
+			sourceTree = "<group>";
+		};
+		74E36F611F6248450091C95C /* FeedBack */ = {
+			isa = PBXGroup;
+			children = (
+				74E36F621F62485B0091C95C /* FeedBackVC.h */,
+				74E36F631F62485B0091C95C /* FeedBackVC.m */,
+				74E36F641F62485B0091C95C /* FeedBackVC.xib */,
+			);
+			name = FeedBack;
+			path = Commit/MyAttendTopic/FeedBack;
+			sourceTree = "<group>";
+		};
+		74E36F671F62496B0091C95C /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				74E36F681F62498E0091C95C /* SettingVC.h */,
+				74E36F691F62498E0091C95C /* SettingVC.m */,
+				74E36F6A1F62498E0091C95C /* SettingVC.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		74E36F6D1F625C660091C95C /* Interview */ = {
+			isa = PBXGroup;
+			children = (
+				74E36F911F6274540091C95C /* SubmittedJobVC.h */,
+				74E36F921F6274540091C95C /* SubmittedJobVC.m */,
+				74E36F931F6274540091C95C /* SubmittedJobVC.xib */,
+				74E36F6E1F625C7D0091C95C /* InterviewEndListVC.h */,
+				74E36F6F1F625C7D0091C95C /* InterviewEndListVC.m */,
+				74E36F701F625C7D0091C95C /* InterviewEndListVC.xib */,
+				74E36F731F625C950091C95C /* InterviewEndListTableViewCell.h */,
+				74E36F741F625C950091C95C /* InterviewEndListTableViewCell.m */,
+				74E36F751F625C950091C95C /* InterviewEndListTableViewCell.xib */,
+				74E36F821F6266E90091C95C /* InterviewNOVC.h */,
+				74E36F831F6266E90091C95C /* InterviewNOVC.m */,
+				74E36F841F6266E90091C95C /* InterviewNOVC.xib */,
+				74E36F7D1F6262510091C95C /* InterviewNOListVC.h */,
+				74E36F7E1F6262510091C95C /* InterviewNOListVC.m */,
+				74E36F7F1F6262510091C95C /* InterviewNOListVC.xib */,
+				74E36F781F62623B0091C95C /* InterviewNOListTableViewCell.h */,
+				74E36F791F62623B0091C95C /* InterviewNOListTableViewCell.m */,
+				74E36F7A1F62623B0091C95C /* InterviewNOListTableViewCell.xib */,
+				74E36F871F626F6D0091C95C /* WaitUpVideoListVC.h */,
+				74E36F881F626F6D0091C95C /* WaitUpVideoListVC.m */,
+				74E36F891F626F6D0091C95C /* WaitUpVideoListVC.xib */,
+				74E36F8C1F62703C0091C95C /* WaitUpVideoListTableViewCell.h */,
+				74E36F8D1F62703C0091C95C /* WaitUpVideoListTableViewCell.m */,
+				74E36F8E1F62703C0091C95C /* WaitUpVideoListTableViewCell.xib */,
+			);
+			path = Interview;
 			sourceTree = "<group>";
 		};
 		74FA24E41F4ABF4A00C7ADEB /* 标签 */ = {
@@ -1077,6 +1308,12 @@
 				74FC5F711F5FCD07006574A3 /* ArticleDetailVC.h */,
 				74FC5F721F5FCD07006574A3 /* ArticleDetailVC.m */,
 				74FC5F731F5FCD07006574A3 /* ArticleDetailVC.xib */,
+				74E36F211F6137ED0091C95C /* AddGossipVC.h */,
+				74E36F221F6137ED0091C95C /* AddGossipVC.m */,
+				74E36F231F6137ED0091C95C /* AddGossipVC.xib */,
+				74E36F261F613BAC0091C95C /* AddGossipImageCollectionViewCell.h */,
+				74E36F271F613BAC0091C95C /* AddGossipImageCollectionViewCell.m */,
+				74E36F281F613BAC0091C95C /* AddGossipImageCollectionViewCell.xib */,
 			);
 			path = Gossip;
 			sourceTree = "<group>";
@@ -1296,7 +1533,6 @@
 			isa = PBXGroup;
 			children = (
 				74FC5F551F5EA0D5006574A3 /* Gossip */,
-				746920841F579235001C1467 /* MySelf */,
 				7469207E1F568E92001C1467 /* Assessment */,
 				7435D7981F4D70810089D61A /* HomePage */,
 				A6F160171E72388700F8DBA4 /* BaseNavController */,
@@ -1595,6 +1831,7 @@
 				7469205A1F56642D001C1467 /* JobDetailVC.xib in Resources */,
 				741E96851EA09C690073B1C5 /* AAHighchartsMore.js in Resources */,
 				7435D7D31F4D70810089D61A /* CommitVC.xib in Resources */,
+				74E36F721F625C7D0091C95C /* InterviewEndListVC.xib in Resources */,
 				A6F160991E72388700F8DBA4 /* 图层-9@2x.png in Resources */,
 				A6F160931E72388700F8DBA4 /* 图层-50@2x.png in Resources */,
 				A6F1607E1E72388700F8DBA4 /* 图层-31@2x.png in Resources */,
@@ -1605,6 +1842,8 @@
 				A6F160861E72388700F8DBA4 /* 图层-39@2x.png in Resources */,
 				7444652F1F55573800C866EE /* city.json in Resources */,
 				74EAAA891F5E711C00F1098D /* SelectVC.xib in Resources */,
+				74E36F551F62426E0091C95C /* MessageListVC.xib in Resources */,
+				74E36F351F6237F20091C95C /* MyCommitTableViewCell.xib in Resources */,
 				A6F160691E72388700F8DBA4 /* 图层-12@2x.png in Resources */,
 				74AEA2521F53F5CF003FED3F /* DesiredJobVC.xib in Resources */,
 				A6F160BA1E72388700F8DBA4 /* 专题（点击）@2x.png in Resources */,
@@ -1627,8 +1866,10 @@
 				A6F160B71E72388700F8DBA4 /* 测试.jpg in Resources */,
 				A6F160711E72388700F8DBA4 /* 图层-1@2x.png in Resources */,
 				A6F160781E72388700F8DBA4 /* 图层-26@2x.png in Resources */,
+				74E36F4A1F623C7C0091C95C /* MyTopicCollectionTableViewCell.xib in Resources */,
 				7469207D1F568919001C1467 /* PraiseListVC.xib in Resources */,
 				7435D7D11F4D70810089D61A /* CommitTableViewCell.xib in Resources */,
+				74E36F7C1F62623B0091C95C /* InterviewNOListTableViewCell.xib in Resources */,
 				74DFCC311F5646EB0029FD98 /* AddJobVC.xib in Resources */,
 				741E96841EA09C690073B1C5 /* AAHighChartsLibrary.js in Resources */,
 				A6F160BB1E72388700F8DBA4 /* 退出@2x.png in Resources */,
@@ -1637,8 +1878,10 @@
 				A6F160821E72388700F8DBA4 /* 图层-35@2x.png in Resources */,
 				74EAAA841F5E70EF00F1098D /* SelectTableViewCell.xib in Resources */,
 				A6F1608C1E72388700F8DBA4 /* 图层-44@2x.png in Resources */,
+				74E36F811F6262510091C95C /* InterviewNOListVC.xib in Resources */,
 				A6F1609D1E72388700F8DBA4 /* BannerVC.xib in Resources */,
 				A6F1607A1E72388700F8DBA4 /* 图层-28@2x.png in Resources */,
+				74E36F951F6274540091C95C /* SubmittedJobVC.xib in Resources */,
 				A6F160A31E72388700F8DBA4 /* welcom2.png in Resources */,
 				74FC5F691F5F9ABA006574A3 /* Done.png in Resources */,
 				A6F160A41E72388700F8DBA4 /* welcom3.png in Resources */,
@@ -1651,46 +1894,61 @@
 				A6F1606E1E72388700F8DBA4 /* 图层-17@2x.png in Resources */,
 				74EAAA751F5E686B00F1098D /* SceneExaminationTableViewCell.xib in Resources */,
 				741E96831EA09C690073B1C5 /* AAHighCharts-3d.js in Resources */,
+				74E36F861F6266E90091C95C /* InterviewNOVC.xib in Resources */,
 				A6F1606A1E72388700F8DBA4 /* 图层-13@2x.png in Resources */,
 				A6F160B01E72388700F8DBA4 /* StarRatingVC.xib in Resources */,
 				A6F160A11E72388700F8DBA4 /* EmojiVC.xib in Resources */,
 				A6F160771E72388700F8DBA4 /* 图层-25@2x.png in Resources */,
+				74E36F6C1F62498E0091C95C /* SettingVC.xib in Resources */,
+				74E36F601F62450D0091C95C /* MyAttendTopicListTableViewCell.xib in Resources */,
 				A6F160A21E72388700F8DBA4 /* welcom1.png in Resources */,
+				74E36F771F625C950091C95C /* InterviewEndListTableViewCell.xib in Resources */,
 				74FC5F6A1F5F9ABA006574A3 /* Done@2x.png in Resources */,
 				A6F160941E72388700F8DBA4 /* 图层-51@2x.png in Resources */,
 				A6F1608E1E72388700F8DBA4 /* 图层-46@2x.png in Resources */,
 				A6F160631E72388700F8DBA4 /* noData@2x.png in Resources */,
 				A6F160761E72388700F8DBA4 /* 图层-24@2x.png in Resources */,
 				7435D7DF1F4D70810089D61A /* JobTableViewCell.xib in Resources */,
+				74E36F2A1F613BAC0091C95C /* AddGossipImageCollectionViewCell.xib in Resources */,
 				A6F15FC71E722AC700F8DBA4 /* Assets.xcassets in Resources */,
 				A6F15FC51E722AC700F8DBA4 /* Main.storyboard in Resources */,
+				74E36F8B1F626F6D0091C95C /* WaitUpVideoListVC.xib in Resources */,
 				A6F160901E72388700F8DBA4 /* 图层-48@2x.png in Resources */,
 				74EAAA7A1F5E687E00F1098D /* AddJobNewVC.xib in Resources */,
 				A6F160921E72388700F8DBA4 /* 图层-4@2x.png in Resources */,
+				74E36F661F62485B0091C95C /* FeedBackVC.xib in Resources */,
 				7435D7DD1F4D70810089D61A /* HomePageVC.xib in Resources */,
 				A6F160911E72388700F8DBA4 /* 图层-49@2x.png in Resources */,
 				A6F1607C1E72388700F8DBA4 /* 图层-2@2x.png in Resources */,
 				7435D7E11F4D70810089D61A /* MatchingJobListTopicTableViewCell.xib in Resources */,
+				74E36F251F6137ED0091C95C /* AddGossipVC.xib in Resources */,
+				74E36F301F6237D30091C95C /* MyCommitVC.xib in Resources */,
 				74EAAA7F1F5E688E00F1098D /* SearchListVC.xib in Resources */,
 				A6F160BD1E72390600F8DBA4 /* Info.plist in Resources */,
 				740FCE0F1ED6BA9B00AA7E8A /* InfoPlist.strings in Resources */,
 				A6F1607B1E72388700F8DBA4 /* 图层-29@2x.png in Resources */,
 				A6F1608D1E72388700F8DBA4 /* 图层-45@2x.png in Resources */,
+				74E36F901F62703C0091C95C /* WaitUpVideoListTableViewCell.xib in Resources */,
 				741E96861EA09C690073B1C5 /* AAJQueryLibrary.js in Resources */,
 				7435D7971F4D1A120089D61A /* SelectButtonView.xib in Resources */,
 				A6F160951E72388700F8DBA4 /* 图层-5@2x.png in Resources */,
 				746920791F568919001C1467 /* HeadCollectionViewCell.xib in Resources */,
 				A6F160881E72388700F8DBA4 /* 图层-40@2x.png in Resources */,
+				74E36F3B1F623BD10091C95C /* MyCollectionVC.xib in Resources */,
 				A6F160B81E72388700F8DBA4 /* backImage@2x.png in Resources */,
+				74E36F401F623C340091C95C /* MyTopicCollectionVC.xib in Resources */,
 				A6F160681E72388700F8DBA4 /* 图层-11@2x.png in Resources */,
 				A6F160741E72388700F8DBA4 /* 图层-22@2x.png in Resources */,
 				7435D7E71F4D70810089D61A /* Q_ADetailListTableViewCell.xib in Resources */,
 				7444652D1F55570B00C866EE /* CityTableViewCell.xib in Resources */,
+				74E36F5B1F6244DE0091C95C /* MyAttendTopicListVC.xib in Resources */,
 				A6F160841E72388700F8DBA4 /* 图层-37@2x.png in Resources */,
 				A6F160661E72388700F8DBA4 /* 刷新静态@2x.png in Resources */,
 				A6F160811E72388700F8DBA4 /* 图层-34@2x.png in Resources */,
 				74B47FD61F4E63FA0045D776 /* CompanyView.xib in Resources */,
 				A6F160971E72388700F8DBA4 /* 图层-7@2x.png in Resources */,
+				74E36F501F62425F0091C95C /* MessageListTableViewCell.xib in Resources */,
+				74E36F451F623C610091C95C /* MyJobCollectionVC.xib in Resources */,
 				A6F1608F1E72388700F8DBA4 /* 图层-47@2x.png in Resources */,
 				A6F160801E72388700F8DBA4 /* 图层-33@2x.png in Resources */,
 				A6F160AE1E72388700F8DBA4 /* OrderListViewController.xib in Resources */,
@@ -1792,12 +2050,16 @@
 				A6F0C9371ED315AA0061D41D /* UIView+Frame.m in Sources */,
 				A6F0C9321ED315AA0061D41D /* LGLCalenderModel.m in Sources */,
 				74DFCC301F5646EB0029FD98 /* AddJobVC.m in Sources */,
+				74E36F651F62485B0091C95C /* FeedBackVC.m in Sources */,
+				74E36F6B1F62498E0091C95C /* SettingVC.m in Sources */,
 				741E96991EA09C690073B1C5 /* AASpline.m in Sources */,
 				A6F160B51E72388700F8DBA4 /* SaintiNetWork.m in Sources */,
+				74E36F3F1F623C340091C95C /* MyTopicCollectionVC.m in Sources */,
 				74EAAA651F5E686100F1098D /* MySelfVC.m in Sources */,
 				74EAAA701F5E686B00F1098D /* AssessmentHomeVC.m in Sources */,
 				74FA24F31F4ABF4A00C7ADEB /* HXTagsView.m in Sources */,
 				741E962D1EA064A80073B1C5 /* MSSCalendarManager.m in Sources */,
+				74E36F941F6274540091C95C /* SubmittedJobVC.m in Sources */,
 				746920781F568919001C1467 /* HeadCollectionViewCell.m in Sources */,
 				74AEA2511F53F5CF003FED3F /* DesiredJobVC.m in Sources */,
 				74FC5F6B1F5F9ABA006574A3 /* UIImageView+MHFacebookImageViewer.m in Sources */,
@@ -1809,10 +2071,14 @@
 				7435D7E41F4D70810089D61A /* Q&AListTableViewCell.m in Sources */,
 				74DFCC341F5646EB0029FD98 /* IntentJobListVC.m in Sources */,
 				74FC5F681F5F9ABA006574A3 /* MHFacebookImageViewer.m in Sources */,
+				74E36F291F613BAC0091C95C /* AddGossipImageCollectionViewCell.m in Sources */,
 				741E969F1EA09C690073B1C5 /* AAYAxis.m in Sources */,
 				741E968B1EA09C690073B1C5 /* AAColumn.m in Sources */,
+				74E36F441F623C610091C95C /* MyJobCollectionVC.m in Sources */,
 				744D93B91F4A860900BB4DDF /* UIScrollView+EmptyDataSet.m in Sources */,
+				74E36F491F623C7C0091C95C /* MyTopicCollectionTableViewCell.m in Sources */,
 				A6F1609A1E72388700F8DBA4 /* UIViewController+YJMNavigationExtension.m in Sources */,
+				74E36F341F6237F20091C95C /* MyCommitTableViewCell.m in Sources */,
 				A6F160601E72388700F8DBA4 /* BaseViewController.m in Sources */,
 				741E968F1EA09C690073B1C5 /* AALegend.m in Sources */,
 				A6F1609E1E72388700F8DBA4 /* YJMBannerCell.m in Sources */,
@@ -1825,6 +2091,7 @@
 				A6F160B41E72388700F8DBA4 /* DBHelper.m in Sources */,
 				A6F160611E72388700F8DBA4 /* BaseModel.m in Sources */,
 				741E96911EA09C690073B1C5 /* AAMarker.m in Sources */,
+				74E36F3A1F623BD10091C95C /* MyCollectionVC.m in Sources */,
 				74AEA2561F5408E0003FED3F /* DesiredJopCollectionViewCell.m in Sources */,
 				74AEA24C1F5397F6003FED3F /* SearchVC.m in Sources */,
 				741E96921EA09C690073B1C5 /* AAOptions.m in Sources */,
@@ -1836,25 +2103,35 @@
 				74DFCC221F5646C40029FD98 /* CompanyDetailVC.m in Sources */,
 				74FC5F591F5EA0E3006574A3 /* GossipListVC.m in Sources */,
 				7435D78E1F4CFDBC0089D61A /* CALayer+MyColor.m in Sources */,
+				74E36F4F1F62425F0091C95C /* MessageListTableViewCell.m in Sources */,
 				741E962C1EA064A80073B1C5 /* MSSCalendarHeaderModel.m in Sources */,
 				741E969D1EA09C690073B1C5 /* AATooltip.m in Sources */,
 				741E96801EA09C690073B1C5 /* AAOptionsConstructor.m in Sources */,
+				74E36F8F1F62703C0091C95C /* WaitUpVideoListTableViewCell.m in Sources */,
 				7444652A1F55570B00C866EE /* LocalCityTableViewCell.m in Sources */,
 				74FA24F21F4ABF4A00C7ADEB /* HXTagsCell.m in Sources */,
 				741E96941EA09C690073B1C5 /* AAPie.m in Sources */,
 				A6F160621E72388700F8DBA4 /* CommonUtils.m in Sources */,
 				741E96121E9F986A0073B1C5 /* TypePickerView.m in Sources */,
+				74E36F5A1F6244DE0091C95C /* MyAttendTopicListVC.m in Sources */,
 				7469206D1F568829001C1467 /* ResumeAlertVC.m in Sources */,
+				74E36F7B1F62623B0091C95C /* InterviewNOListTableViewCell.m in Sources */,
 				A6F160B31E72388700F8DBA4 /* DBDaoHelper.m in Sources */,
 				741E967D1EA09C690073B1C5 /* AAChartModel.m in Sources */,
+				74E36F711F625C7D0091C95C /* InterviewEndListVC.m in Sources */,
 				7435D7DC1F4D70810089D61A /* HomePageVC.m in Sources */,
 				7435D7E21F4D70810089D61A /* MatchingJobListVC.m in Sources */,
 				741E968D1EA09C690073B1C5 /* AAItemStyle.m in Sources */,
 				7435D7EC1F4D70810089D61A /* WorkTopicsTableViewCell.m in Sources */,
+				74E36F8A1F626F6D0091C95C /* WaitUpVideoListVC.m in Sources */,
+				74E36F2F1F6237D30091C95C /* MyCommitVC.m in Sources */,
+				74E36F801F6262510091C95C /* InterviewNOListVC.m in Sources */,
 				7435D7E61F4D70810089D61A /* Q_ADetailListTableViewCell.m in Sources */,
+				74E36F5F1F62450D0091C95C /* MyAttendTopicListTableViewCell.m in Sources */,
 				7435D7D01F4D70810089D61A /* CommitTableViewCell.m in Sources */,
 				74FC5F5E1F5F8A70006574A3 /* GossipListTableViewCell.m in Sources */,
 				741E96111E9F986A0073B1C5 /* TimeSelectView.m in Sources */,
+				74E36F851F6266E90091C95C /* InterviewNOVC.m in Sources */,
 				74EAAA7E1F5E688E00F1098D /* SearchListVC.m in Sources */,
 				74B47FD41F4E63910045D776 /* CompanyView.m in Sources */,
 				741E962A1EA064A80073B1C5 /* MSSCalendarCollectionReusableView.m in Sources */,
@@ -1866,17 +2143,20 @@
 				741E969C1EA09C690073B1C5 /* AATitle.m in Sources */,
 				7435D7DE1F4D70810089D61A /* JobTableViewCell.m in Sources */,
 				741E962B1EA064A80073B1C5 /* MSSCalendarCollectionViewCell.m in Sources */,
+				74E36F241F6137ED0091C95C /* AddGossipVC.m in Sources */,
 				A6F0C9301ED315AA0061D41D /* LGLCalendarDate.m in Sources */,
 				74DFCC321F5646EB0029FD98 /* IntentJobListTableViewCell.m in Sources */,
 				741E968A1EA09C690073B1C5 /* AAChart.m in Sources */,
 				7435D7D21F4D70810089D61A /* CommitVC.m in Sources */,
 				741E969A1EA09C690073B1C5 /* AAStyle.m in Sources */,
 				A6F0C9331ED315AA0061D41D /* LGLCalenderSubModel.m in Sources */,
+				74E36F541F62426E0091C95C /* MessageListVC.m in Sources */,
 				7469207A1F568919001C1467 /* PraiseListTableViewCell.m in Sources */,
 				74EAAA831F5E70EF00F1098D /* SelectTableViewCell.m in Sources */,
 				7435D7EA1F4D70810089D61A /* Q_AListVC.m in Sources */,
 				A6F1609C1E72388700F8DBA4 /* BannerVC.m in Sources */,
 				A6F15FBC1E722AC700F8DBA4 /* main.m in Sources */,
+				74E36F761F625C950091C95C /* InterviewEndListTableViewCell.m in Sources */,
 				741E96881EA09C690073B1C5 /* AAAreaspline.m in Sources */,
 				A6F160A61E72388700F8DBA4 /* YJMGuideViewCell.m in Sources */,
 				741E969E1EA09C690073B1C5 /* AAXAxis.m in Sources */,

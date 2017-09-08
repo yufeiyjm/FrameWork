@@ -21,6 +21,10 @@ pod 'TPKeyboardAvoiding', '~> 1.3'
 
 pod 'HMSegmentedControl'
 pod 'PNChart'
+#键盘控制器
+pod 'IQKeyboardManager'
+pod 'TZImagePickerController'
+
 #pod 'TTTAttributedLabel'
 #pod 'BaiduMapKit', '~> 2.9.1'
 ## 主模块(必须)
