@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ValuesTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Urf-LG-muf">
+                        <rect key="frame" x="10" y="0.0" width="355" height="104.5"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXT-Oh-0mV">
+                                <rect key="frame" x="14" y="20" width="75" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="d8d-8y-jSf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="13"/>
+                                <state key="normal" title="团结荣誉">
+                                    <color key="titleColor" red="0.42352941179999998" green="0.45098039220000002" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="12.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorWithUIColor">
+                                        <color key="value" red="0.1019607843" green="0.66274509800000003" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tagButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="x16-KX-5ZG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehL-Iu-H2p">
+                                <rect key="frame" x="98" y="20" width="75" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="13"/>
+                                <state key="normal" title="鼓励创新">
+                                    <color key="titleColor" red="0.42352941179999998" green="0.45098039220000002" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="12.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorWithUIColor">
+                                        <color key="value" red="0.1019607843" green="0.66274509800000003" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tagButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9hU-uZ-fZx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpk-yv-mDl">
+                                <rect key="frame" x="182" y="20" width="75" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="13"/>
+                                <state key="normal" title="尊重员工">
+                                    <color key="titleColor" red="0.42352941179999998" green="0.45098039220000002" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="12.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorWithUIColor">
+                                        <color key="value" red="0.1019607843" green="0.66274509800000003" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tagButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BCh-Ng-Osa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpS-qu-ynE">
+                                <rect key="frame" x="266" y="20" width="75" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="13"/>
+                                <state key="normal" title="团结荣誉">
+                                    <color key="titleColor" red="0.42352941179999998" green="0.45098039220000002" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="12.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorWithUIColor">
+                                        <color key="value" red="0.1019607843" green="0.66274509800000003" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tagButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vqX-n8-3w9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pae-nJ-YE7">
+                                <rect key="frame" x="14" y="60" width="75" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="13"/>
+                                <state key="normal" title="言论自由">
+                                    <color key="titleColor" red="0.42352941179999998" green="0.45098039220000002" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="12.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorWithUIColor">
+                                        <color key="value" red="0.1019607843" green="0.66274509800000003" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tagButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="TS5-yE-T3X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sh6-yp-jfu">
+                                <rect key="frame" x="98" y="60" width="75" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="13"/>
+                                <state key="normal" title="工匠精神">
+                                    <color key="titleColor" red="0.42352941179999998" green="0.45098039220000002" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="12.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorWithUIColor">
+                                        <color key="value" red="0.1019607843" green="0.66274509800000003" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tagButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3nW-Tn-vHp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCF-w8-Sxk">
+                                <rect key="frame" x="182" y="60" width="75" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="13"/>
+                                <state key="normal" title="弹性工作">
+                                    <color key="titleColor" red="0.42352941179999998" green="0.45098039220000002" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="12.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorWithUIColor">
+                                        <color key="value" red="0.1019607843" green="0.66274509800000003" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tagButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kyX-tW-mUF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otd-d4-oDD">
+                                <rect key="frame" x="266" y="60" width="75" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="13"/>
+                                <state key="normal" title="团队激励">
+                                    <color key="titleColor" red="0.42352941179999998" green="0.45098039220000002" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="12.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorWithUIColor">
+                                        <color key="value" red="0.1019607843" green="0.66274509800000003" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tagButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="X3R-kw-bEo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pae-nJ-YE7" firstAttribute="leading" secondItem="Urf-LG-muf" secondAttribute="leading" constant="14" id="2bd-7w-1Si"/>
+                            <constraint firstItem="Otd-d4-oDD" firstAttribute="leading" secondItem="MCF-w8-Sxk" secondAttribute="trailing" constant="9" id="3kv-89-wVO"/>
+                            <constraint firstItem="Otd-d4-oDD" firstAttribute="width" secondItem="vXT-Oh-0mV" secondAttribute="width" id="55V-qJ-PE1"/>
+                            <constraint firstItem="Pae-nJ-YE7" firstAttribute="width" secondItem="vXT-Oh-0mV" secondAttribute="width" id="5F9-Bf-9Xe"/>
+                            <constraint firstItem="Sh6-yp-jfu" firstAttribute="top" secondItem="ehL-Iu-H2p" secondAttribute="bottom" constant="15" id="5Ud-9C-eKI"/>
+                            <constraint firstItem="wpk-yv-mDl" firstAttribute="leading" secondItem="ehL-Iu-H2p" secondAttribute="trailing" constant="9" id="7j6-5Y-lRW"/>
+                            <constraint firstItem="vXT-Oh-0mV" firstAttribute="top" secondItem="Urf-LG-muf" secondAttribute="top" constant="20" id="8sT-xc-M2f"/>
+                            <constraint firstItem="Pae-nJ-YE7" firstAttribute="height" secondItem="vXT-Oh-0mV" secondAttribute="height" id="A3q-ny-B2T"/>
+                            <constraint firstItem="Pae-nJ-YE7" firstAttribute="top" secondItem="vXT-Oh-0mV" secondAttribute="bottom" constant="15" id="Ded-mf-SPA"/>
+                            <constraint firstItem="rpS-qu-ynE" firstAttribute="top" secondItem="Urf-LG-muf" secondAttribute="top" constant="20" id="FzM-ES-c1j"/>
+                            <constraint firstItem="rpS-qu-ynE" firstAttribute="width" secondItem="vXT-Oh-0mV" secondAttribute="width" id="G1u-Te-SNU"/>
+                            <constraint firstItem="ehL-Iu-H2p" firstAttribute="top" secondItem="Urf-LG-muf" secondAttribute="top" constant="20" id="God-rs-8CQ"/>
+                            <constraint firstItem="ehL-Iu-H2p" firstAttribute="width" secondItem="vXT-Oh-0mV" secondAttribute="width" id="IgX-ov-JBs"/>
+                            <constraint firstAttribute="trailing" secondItem="rpS-qu-ynE" secondAttribute="trailing" constant="14" id="JZA-Qm-2F8"/>
+                            <constraint firstItem="ehL-Iu-H2p" firstAttribute="leading" secondItem="vXT-Oh-0mV" secondAttribute="trailing" constant="9" id="Q8R-2a-ToD"/>
+                            <constraint firstAttribute="height" constant="104.5" id="Qp5-Km-7Lg"/>
+                            <constraint firstItem="Sh6-yp-jfu" firstAttribute="height" secondItem="vXT-Oh-0mV" secondAttribute="height" id="TLf-Vv-875"/>
+                            <constraint firstItem="MCF-w8-Sxk" firstAttribute="height" secondItem="vXT-Oh-0mV" secondAttribute="height" id="XCN-hy-GGK"/>
+                            <constraint firstItem="rpS-qu-ynE" firstAttribute="height" secondItem="vXT-Oh-0mV" secondAttribute="height" id="Ygn-LT-or7"/>
+                            <constraint firstItem="Sh6-yp-jfu" firstAttribute="leading" secondItem="Pae-nJ-YE7" secondAttribute="trailing" constant="9" id="fDi-6s-Pjf"/>
+                            <constraint firstItem="wpk-yv-mDl" firstAttribute="top" secondItem="Urf-LG-muf" secondAttribute="top" constant="20" id="fyb-6j-EH3"/>
+                            <constraint firstItem="MCF-w8-Sxk" firstAttribute="top" secondItem="wpk-yv-mDl" secondAttribute="bottom" constant="15" id="gNY-Zw-gbA"/>
+                            <constraint firstItem="MCF-w8-Sxk" firstAttribute="width" secondItem="vXT-Oh-0mV" secondAttribute="width" id="gmQ-Bu-iKP"/>
+                            <constraint firstItem="Sh6-yp-jfu" firstAttribute="width" secondItem="vXT-Oh-0mV" secondAttribute="width" id="krh-ji-0L8"/>
+                            <constraint firstItem="MCF-w8-Sxk" firstAttribute="leading" secondItem="Sh6-yp-jfu" secondAttribute="trailing" constant="9" id="lQa-fN-NOv"/>
+                            <constraint firstItem="rpS-qu-ynE" firstAttribute="leading" secondItem="wpk-yv-mDl" secondAttribute="trailing" constant="9" id="mIb-ld-AxE"/>
+                            <constraint firstItem="ehL-Iu-H2p" firstAttribute="height" secondItem="vXT-Oh-0mV" secondAttribute="height" id="mmm-yW-BRT"/>
+                            <constraint firstItem="Otd-d4-oDD" firstAttribute="top" secondItem="rpS-qu-ynE" secondAttribute="bottom" constant="15" id="o2R-6C-26v"/>
+                            <constraint firstItem="wpk-yv-mDl" firstAttribute="height" secondItem="vXT-Oh-0mV" secondAttribute="height" id="pJ0-wn-OJj"/>
+                            <constraint firstItem="vXT-Oh-0mV" firstAttribute="leading" secondItem="Urf-LG-muf" secondAttribute="leading" constant="14" id="rYb-Mn-QjG"/>
+                            <constraint firstItem="wpk-yv-mDl" firstAttribute="width" secondItem="vXT-Oh-0mV" secondAttribute="width" id="vjX-SW-IhL"/>
+                            <constraint firstAttribute="trailing" secondItem="Otd-d4-oDD" secondAttribute="trailing" constant="14" id="wkx-Eq-glp"/>
+                            <constraint firstItem="Otd-d4-oDD" firstAttribute="height" secondItem="vXT-Oh-0mV" secondAttribute="height" id="zQp-th-qoP"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Urf-LG-muf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Zfg-FE-BXx"/>
+                    <constraint firstAttribute="bottom" secondItem="Urf-LG-muf" secondAttribute="bottom" id="vwR-eZ-uvk"/>
+                    <constraint firstItem="Urf-LG-muf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yEs-uP-qM4"/>
+                    <constraint firstAttribute="trailing" secondItem="Urf-LG-muf" secondAttribute="trailing" constant="10" id="z0Z-RM-Hea"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="backHeight" destination="Qp5-Km-7Lg" id="8oW-fH-FYw"/>
+                <outlet property="backView" destination="Urf-LG-muf" id="brC-EQ-7gY"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

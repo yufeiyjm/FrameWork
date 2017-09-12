@@ -57,6 +57,9 @@
                                                                     <color key="value" red="0.1019607843" green="0.66274509800000003" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="myInfoClick:" destination="-1" eventType="touchUpInside" id="dgJ-b3-Iqo"/>
+                                                            </connections>
                                                         </button>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip" translatesAutoresizingMaskIntoConstraints="NO" id="5qb-kJ-0Aj">
                                                             <rect key="frame" x="38" y="38" width="27" height="27"/>

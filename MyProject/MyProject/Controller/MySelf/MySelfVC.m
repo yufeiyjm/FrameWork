@@ -15,6 +15,9 @@
 #import "InterviewEndListVC.h"
 #import "InterviewNOVC.h"
 #import "SubmittedJobVC.h"
+#import "BaseInformationViewController.h"
+#import "ExperiencedBirdVC.h"
+#import "VitaeVC.h"
 
 @interface MySelfVC ()
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *scrollWidth;
@@ -28,6 +31,11 @@
     // Do any additional setup after loading the view from its nib.
     self.navigationController.navigationBarHidden = YES;
     self.scrollWidth.constant = kScreenWidth;
+}
+- (IBAction)myInfoClick:(id)sender {
+    BaseInformationViewController *vc = [[BaseInformationViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -66,6 +74,13 @@
 - (IBAction)bottomButtonClick:(UIButton *)sender {
     
     switch (sender.tag) {
+            
+        case 1:/**我的简历*/
+        {
+            VitaeVC *vc = [[VitaeVC alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
         case 3:/**我的收藏*/
         {
             MyCollectionVC *vc = [[MyCollectionVC alloc]init];
@@ -81,6 +96,12 @@
         case 5:/**我参与的话题*/
         {
             MyAttendTopicListVC *vc = [[MyAttendTopicListVC alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 6:/**申请成为老鸟*/
+        {
+            ExperiencedBirdVC *vc = [[ExperiencedBirdVC alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
