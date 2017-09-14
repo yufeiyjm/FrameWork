@@ -75,7 +75,7 @@
     
     switch (sender.tag) {
             
-        case 1:/**我的简历*/
+        case 2:/**我的简历*/
         {
             VitaeVC *vc = [[VitaeVC alloc]init];
             [self.navigationController pushViewController:vc animated:YES];

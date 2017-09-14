@@ -28,7 +28,7 @@
         
         UIButton *cancleBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [cancleBtn setTitle:@"取消" forState:UIControlStateNormal];
-        [cancleBtn setTitleColor:UIColorFromRGB(0x0A84C1) forState:UIControlStateNormal];
+        [cancleBtn setTitleColor:UIColorFromRGB(0x50BDCA) forState:UIControlStateNormal];
         cancleBtn.titleLabel.font = k15Font;
         [cancleBtn setFrame:CGRectMake(20, 0, 44, 40)];
         [cancleBtn addTarget:self action:@selector(cancleClick) forControlEvents:UIControlEventTouchUpInside];
@@ -36,14 +36,18 @@
         
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         [btn setTitle:@"确定" forState:UIControlStateNormal];
-        [btn setTitleColor:UIColorFromRGB(0x0A84C1) forState:UIControlStateNormal];
+        [btn setTitleColor:UIColorFromRGB(0x50BDCA) forState:UIControlStateNormal];
         btn.titleLabel.font = k15Font;
         [btn setFrame:CGRectMake(kScreenWidth - 64, 0, 44, 40)];
         [btn addTarget:self action:@selector(finishClick) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:btn];
         
+        UIView *lineTop = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 0.5)];
+        lineTop.backgroundColor =UIColorFromRGB(0xE4EAF4);
+        [self addSubview:lineTop];
+        
         UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, 40, kScreenWidth, 0.5)];
-        line.backgroundColor =UIColorFromRGB(0xe1e1e1);
+        line.backgroundColor =UIColorFromRGB(0xE4EAF4);
         [self addSubview:line];
     }
     [UIView animateWithDuration:0.25 animations:^{

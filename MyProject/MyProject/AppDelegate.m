@@ -11,6 +11,7 @@
 #import "YJMNavigationController.h"
 #import "AssessmentHomeVC.h"
 #import "GossipListVC.h"
+#import "SpecialworkListVC.h"
 
 @interface AppDelegate ()
 
@@ -42,7 +43,7 @@
     YJMNavigationController *homeNav2 = [[YJMNavigationController alloc]initWithRootViewController:homePage2];
     homeNav2.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"职场八卦" image:IMAGE(@"职场八卦（未选中）") selectedImage:IMAGE(@"职场八卦（未选中）")];
     
-    HomePageVC *chatController = [[HomePageVC alloc]init];
+    SpecialworkListVC *chatController = [[SpecialworkListVC alloc]init];
     //    chatController.hidesBottomBarWhenPushed = YES;
     //    chatController.lblTitle.text = @"客服";
     

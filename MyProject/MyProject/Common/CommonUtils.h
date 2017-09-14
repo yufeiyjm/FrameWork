@@ -117,7 +117,7 @@
  若当前没有网络, 返回NO; 有网, 返回YES
  */
 + (NSString *)messageTimeWithDate:(NSDate *)date;
-/*
+/*·
  方法描述:
  获取label的宽度
  

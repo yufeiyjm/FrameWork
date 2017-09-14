@@ -11,8 +11,8 @@
 @implementation TimeSelectView
 
 -(void)creatTimeSelectView:(UIView *)aView{
-    self.tag =909090909;
-    UIView *tempView = [aView viewWithTag:909090909];
+    self.tag =909090901;
+    UIView *tempView = [aView viewWithTag:909090901];
     [tempView removeFromSuperview];
     if (!_timePicker) {
         self.backgroundColor = kWhiteColor;
@@ -27,7 +27,7 @@
         
         UIButton *cancleBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [cancleBtn setTitle:@"取消" forState:UIControlStateNormal];
-        [cancleBtn setTitleColor:UIColorFromRGB(0xd5bb83) forState:UIControlStateNormal];
+        [cancleBtn setTitleColor:UIColorFromRGB(0x50BDCA) forState:UIControlStateNormal];
         cancleBtn.titleLabel.font = k15Font;
         [cancleBtn setFrame:CGRectMake(20, 0, 44, 40)];
         [cancleBtn addTarget:self action:@selector(cancleClick) forControlEvents:UIControlEventTouchUpInside];
@@ -35,18 +35,22 @@
         
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         [btn setTitle:@"确定" forState:UIControlStateNormal];
-        [btn setTitleColor:UIColorFromRGB(0xd5bb83) forState:UIControlStateNormal];
+        [btn setTitleColor:UIColorFromRGB(0x50BDCA) forState:UIControlStateNormal];
         btn.titleLabel.font = k15Font;
         [btn setFrame:CGRectMake(kScreenWidth - 64, 0, 44, 40)];
         [btn addTarget:self action:@selector(finishClick) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:btn];
         
+        UIView *lineTop = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 0.5)];
+        lineTop.backgroundColor =UIColorFromRGB(0xE4EAF4);
+        [self addSubview:lineTop];
+        
         UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, 40, kScreenWidth, 0.5)];
-        line.backgroundColor =UIColorFromRGB(0xe1e1e1);
+        line.backgroundColor =UIColorFromRGB(0xE4EAF4);
         [self addSubview:line];
     }
     [UIView animateWithDuration:0.25 animations:^{
-        self.frame = CGRectMake(0, kScreenHeight - 256 , kScreenWidth, 256);
+        self.frame = CGRectMake(0, kScreenHeight - 256 - 64, kScreenWidth, 256);
     }];
 }
 -(void)cancleClick{
