@@ -9,6 +9,11 @@
 #import "SpecialworkListVC.h"
 #import "WorkTopicsTableViewCell.h"
 #import "SpecialWorkHotCollectionViewCell.h"
+#import "DateSignTableViewCell.h"
+#import "MakeDateSignVC.h"
+#import "TopicListVC.h"
+#import "ViewpointDetailVC.h"
+#import "DateSignListVC.h"
 
 @interface SpecialworkListVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -27,6 +32,7 @@
     // Do any additional setup after loading the view from its nib.
     self.navigationController.navigationBarHidden = YES;
     [self.tableView registerNib:[UINib nibWithNibName:@"WorkTopicsTableViewCell" bundle:nil] forCellReuseIdentifier:@"WorkTopicsTableViewCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"DateSignTableViewCell" bundle:nil] forCellReuseIdentifier:@"DateSignTableViewCell"];
     
     self.tableView.tableFooterView = [[UIView alloc]init];
     self.tableView.estimatedRowHeight = 117.0f;
@@ -76,27 +82,7 @@
     static NSString * CellIdentifier = @"SpecialWorkHotCollectionViewCell";
     SpecialWorkHotCollectionViewCell *cell  = [collectionView dequeueReusableCellWithReuseIdentifier: CellIdentifier forIndexPath:indexPath];
     cell.contentView.backgroundColor = kClearColor;
-    
-//    if (indexPath.row == (self.arrDate.count)) {
-//        cell.deleteButton.hidden = YES;
-//        cell.addGossipImageView.image = IMAGE(@"发布八卦添加按钮");
-//    }else{
-//        cell.deleteButton.hidden = NO;
-//        cell.addGossipImageView.image = self.arrDate[indexPath.row];
-//    }
-//    cell.deleteButton.tag = indexPath.row;
-//    [cell.deleteButton addTarget:self action:@selector(deleteButtonClick:) forControlEvents:UIControlEventTouchUpInside];
-    //    [cell.headImage sd_setImageWithURL:[NSURL URLWithString:self.headArr[indexPath.row][@"Head_portrait"]] placeholderImage:IMAGE(@"默认图")];
-    //    cell.nameLab.text = self.headArr[indexPath.row][@"User_nickname"];
-    //    NSDictionary *dic = self.arrTheSame[indexPath.row];
-    //    cell.headImage.layer.cornerRadius = 30;
-    //    [cell.headImage sd_setImageWithURL:[NSURL URLWithString:dic[@"people_image"]] placeholderImage:IMAGE(@"头像默认")];
-    //    if ([dic[@"is_realname"] isEqualToString:@"200"]) {
-    //        cell.imgCard.hidden = NO;
-    //    }else{
-    //        cell.imgCard.hidden = YES;
-    //    }
-    //        cell.labTag.text = NotNone(model.peopleLabel);
+
     
     return cell;
     
@@ -104,7 +90,9 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    
+    DateSignListVC *vc = [[DateSignListVC alloc]init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark ------列表代理
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -119,26 +107,35 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     
-    static NSString *identifier = @"WorkTopicsTableViewCell";
-    WorkTopicsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    cell.selectionStyle =  UITableViewCellSelectionStyleNone;
-    cell.imageArr = nil;
-    if (indexPath.row == 0) {
-        cell.topTitleHeight.constant = 26;
-    }else if(indexPath.row == 2){
-         cell.imageArr = @[@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504676319933&di=ebdfbc51e94c0fd291675a2266ce45f0&imgtype=0&src=http%3A%2F%2Fcimg.taohuaan.net%2Fupload%2F201211%2F09%2F161159Wq7P8.jpg",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504676319933&di=ebdfbc51e94c0fd291675a2266ce45f0&imgtype=0&src=http%3A%2F%2Fcimg.taohuaan.net%2Fupload%2F201211%2F09%2F161159Wq7P8.jpg",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504676319933&di=ebdfbc51e94c0fd291675a2266ce45f0&imgtype=0&src=http%3A%2F%2Fcimg.taohuaan.net%2Fupload%2F201211%2F09%2F161159Wq7P8.jpg",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504676319933&di=ebdfbc51e94c0fd291675a2266ce45f0&imgtype=0&src=http%3A%2F%2Fcimg.taohuaan.net%2Fupload%2F201211%2F09%2F161159Wq7P8.jpg",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504676319933&di=ebdfbc51e94c0fd291675a2266ce45f0&imgtype=0&src=http%3A%2F%2Fcimg.taohuaan.net%2Fupload%2F201211%2F09%2F161159Wq7P8.jpg",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504676319933&di=ebdfbc51e94c0fd291675a2266ce45f0&imgtype=0&src=http%3A%2F%2Fcimg.taohuaan.net%2Fupload%2F201211%2F09%2F161159Wq7P8.jpg",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504676319933&di=ebdfbc51e94c0fd291675a2266ce45f0&imgtype=0&src=http%3A%2F%2Fcimg.taohuaan.net%2Fupload%2F201211%2F09%2F161159Wq7P8.jpg",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504676319933&di=ebdfbc51e94c0fd291675a2266ce45f0&imgtype=0&src=http%3A%2F%2Fcimg.taohuaan.net%2Fupload%2F201211%2F09%2F161159Wq7P8.jpg",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504676319933&di=ebdfbc51e94c0fd291675a2266ce45f0&imgtype=0&src=http%3A%2F%2Fcimg.taohuaan.net%2Fupload%2F201211%2F09%2F161159Wq7P8.jpg"];
+   
+    if (indexPath.row == 2) {
+        static NSString *identifier = @"DateSignTableViewCell";
+        DateSignTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        cell.selectionStyle =  UITableViewCellSelectionStyleNone;
+        return cell;
     }else{
-        cell.topTitleHeight.constant = 0;
+        static NSString *identifier = @"WorkTopicsTableViewCell";
+        WorkTopicsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        cell.selectionStyle =  UITableViewCellSelectionStyleNone;
+        cell.imageArr = nil;
+        if (indexPath.row == 0) {
+            cell.topTitleHeight.constant = 26;
+        }else if(indexPath.row == 2){
+            cell.imageArr = @[@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504676319933&di=ebdfbc51e94c0fd291675a2266ce45f0&imgtype=0&src=http%3A%2F%2Fcimg.taohuaan.net%2Fupload%2F201211%2F09%2F161159Wq7P8.jpg",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504676319933&di=ebdfbc51e94c0fd291675a2266ce45f0&imgtype=0&src=http%3A%2F%2Fcimg.taohuaan.net%2Fupload%2F201211%2F09%2F161159Wq7P8.jpg",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504676319933&di=ebdfbc51e94c0fd291675a2266ce45f0&imgtype=0&src=http%3A%2F%2Fcimg.taohuaan.net%2Fupload%2F201211%2F09%2F161159Wq7P8.jpg",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504676319933&di=ebdfbc51e94c0fd291675a2266ce45f0&imgtype=0&src=http%3A%2F%2Fcimg.taohuaan.net%2Fupload%2F201211%2F09%2F161159Wq7P8.jpg",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504676319933&di=ebdfbc51e94c0fd291675a2266ce45f0&imgtype=0&src=http%3A%2F%2Fcimg.taohuaan.net%2Fupload%2F201211%2F09%2F161159Wq7P8.jpg",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504676319933&di=ebdfbc51e94c0fd291675a2266ce45f0&imgtype=0&src=http%3A%2F%2Fcimg.taohuaan.net%2Fupload%2F201211%2F09%2F161159Wq7P8.jpg",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504676319933&di=ebdfbc51e94c0fd291675a2266ce45f0&imgtype=0&src=http%3A%2F%2Fcimg.taohuaan.net%2Fupload%2F201211%2F09%2F161159Wq7P8.jpg",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504676319933&di=ebdfbc51e94c0fd291675a2266ce45f0&imgtype=0&src=http%3A%2F%2Fcimg.taohuaan.net%2Fupload%2F201211%2F09%2F161159Wq7P8.jpg",@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504676319933&di=ebdfbc51e94c0fd291675a2266ce45f0&imgtype=0&src=http%3A%2F%2Fcimg.taohuaan.net%2Fupload%2F201211%2F09%2F161159Wq7P8.jpg"];
+        }else{
+            cell.topTitleHeight.constant = 0;
+        }
+        cell.lineHeight.constant = 10;
+        return cell;
     }
-    cell.lineHeight.constant = 10;
-    return cell;
-    
 }
 
 
 - (void )tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
-    
+    ViewpointDetailVC *vc = [[ViewpointDetailVC alloc]init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark -
@@ -219,6 +216,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)moreTopic:(id)sender {
+    TopicListVC *vc = [[TopicListVC alloc]init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 /*

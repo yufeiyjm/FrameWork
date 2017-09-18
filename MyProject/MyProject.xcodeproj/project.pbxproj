@@ -153,6 +153,17 @@
 		7470FB871F6A30ED009F4123 /* 方正清刻本悦宋简体.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 7470FB861F6A30ED009F4123 /* 方正清刻本悦宋简体.TTF */; };
 		7470FB8B1F6A4805009F4123 /* MakeDateSignVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7470FB891F6A4805009F4123 /* MakeDateSignVC.m */; };
 		7470FB8C1F6A4805009F4123 /* MakeDateSignVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7470FB8A1F6A4805009F4123 /* MakeDateSignVC.xib */; };
+		7470FB901F6CC473009F4123 /* DateSignTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7470FB8E1F6CC473009F4123 /* DateSignTableViewCell.m */; };
+		7470FB911F6CC473009F4123 /* DateSignTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7470FB8F1F6CC473009F4123 /* DateSignTableViewCell.xib */; };
+		7470FB931F6CC4BF009F4123 /* riqian.png in Resources */ = {isa = PBXBuildFile; fileRef = 7470FB921F6CC4BF009F4123 /* riqian.png */; };
+		7470FB981F6CC8D7009F4123 /* TopicListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7470FB961F6CC8D7009F4123 /* TopicListTableViewCell.m */; };
+		7470FB991F6CC8D7009F4123 /* TopicListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7470FB971F6CC8D7009F4123 /* TopicListTableViewCell.xib */; };
+		7470FB9D1F6CC8E9009F4123 /* TopicListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7470FB9B1F6CC8E9009F4123 /* TopicListVC.m */; };
+		7470FB9E1F6CC8E9009F4123 /* TopicListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7470FB9C1F6CC8E9009F4123 /* TopicListVC.xib */; };
+		7470FBA21F6CCEDD009F4123 /* ViewpointDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7470FBA01F6CCEDD009F4123 /* ViewpointDetailVC.m */; };
+		7470FBA31F6CCEDD009F4123 /* ViewpointDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7470FBA11F6CCEDD009F4123 /* ViewpointDetailVC.xib */; };
+		7470FBA71F6CD8B0009F4123 /* DateSignListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7470FBA51F6CD8B0009F4123 /* DateSignListVC.m */; };
+		7470FBA81F6CD8B0009F4123 /* DateSignListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7470FBA61F6CD8B0009F4123 /* DateSignListVC.xib */; };
 		747EB8DA1F4AB8000015E8D3 /* DINCondensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747EB8D91F4AB8000015E8D3 /* DINCondensed.ttf */; };
 		74AEA24C1F5397F6003FED3F /* SearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AEA24A1F5397F6003FED3F /* SearchVC.m */; };
 		74AEA24D1F5397F6003FED3F /* SearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74AEA24B1F5397F6003FED3F /* SearchVC.xib */; };
@@ -613,6 +624,22 @@
 		7470FB881F6A4805009F4123 /* MakeDateSignVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeDateSignVC.h; sourceTree = "<group>"; };
 		7470FB891F6A4805009F4123 /* MakeDateSignVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeDateSignVC.m; sourceTree = "<group>"; };
 		7470FB8A1F6A4805009F4123 /* MakeDateSignVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MakeDateSignVC.xib; sourceTree = "<group>"; };
+		7470FB8D1F6CC473009F4123 /* DateSignTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateSignTableViewCell.h; sourceTree = "<group>"; };
+		7470FB8E1F6CC473009F4123 /* DateSignTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateSignTableViewCell.m; sourceTree = "<group>"; };
+		7470FB8F1F6CC473009F4123 /* DateSignTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateSignTableViewCell.xib; sourceTree = "<group>"; };
+		7470FB921F6CC4BF009F4123 /* riqian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = riqian.png; sourceTree = "<group>"; };
+		7470FB951F6CC8D7009F4123 /* TopicListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicListTableViewCell.h; sourceTree = "<group>"; };
+		7470FB961F6CC8D7009F4123 /* TopicListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicListTableViewCell.m; sourceTree = "<group>"; };
+		7470FB971F6CC8D7009F4123 /* TopicListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicListTableViewCell.xib; sourceTree = "<group>"; };
+		7470FB9A1F6CC8E9009F4123 /* TopicListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicListVC.h; sourceTree = "<group>"; };
+		7470FB9B1F6CC8E9009F4123 /* TopicListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicListVC.m; sourceTree = "<group>"; };
+		7470FB9C1F6CC8E9009F4123 /* TopicListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicListVC.xib; sourceTree = "<group>"; };
+		7470FB9F1F6CCEDD009F4123 /* ViewpointDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewpointDetailVC.h; path = Topic/ViewpointDetailVC.h; sourceTree = "<group>"; };
+		7470FBA01F6CCEDD009F4123 /* ViewpointDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewpointDetailVC.m; path = Topic/ViewpointDetailVC.m; sourceTree = "<group>"; };
+		7470FBA11F6CCEDD009F4123 /* ViewpointDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ViewpointDetailVC.xib; path = Topic/ViewpointDetailVC.xib; sourceTree = "<group>"; };
+		7470FBA41F6CD8B0009F4123 /* DateSignListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateSignListVC.h; sourceTree = "<group>"; };
+		7470FBA51F6CD8B0009F4123 /* DateSignListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateSignListVC.m; sourceTree = "<group>"; };
+		7470FBA61F6CD8B0009F4123 /* DateSignListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateSignListVC.xib; sourceTree = "<group>"; };
 		747EB8D91F4AB8000015E8D3 /* DINCondensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DINCondensed.ttf; sourceTree = "<group>"; };
 		74AEA2491F5397F6003FED3F /* SearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchVC.h; path = MyProject/Controller/HomePage/SearchVC.h; sourceTree = SOURCE_ROOT; };
 		74AEA24A1F5397F6003FED3F /* SearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchVC.m; path = MyProject/Controller/HomePage/SearchVC.m; sourceTree = SOURCE_ROOT; };
@@ -1397,11 +1424,35 @@
 				7470FB811F6A2F75009F4123 /* SpecialWorkHotCollectionViewCell.h */,
 				7470FB821F6A2F75009F4123 /* SpecialWorkHotCollectionViewCell.m */,
 				7470FB831F6A2F75009F4123 /* SpecialWorkHotCollectionViewCell.xib */,
+				7470FB8D1F6CC473009F4123 /* DateSignTableViewCell.h */,
+				7470FB8E1F6CC473009F4123 /* DateSignTableViewCell.m */,
+				7470FB8F1F6CC473009F4123 /* DateSignTableViewCell.xib */,
+				7470FB921F6CC4BF009F4123 /* riqian.png */,
 				7470FB881F6A4805009F4123 /* MakeDateSignVC.h */,
 				7470FB891F6A4805009F4123 /* MakeDateSignVC.m */,
 				7470FB8A1F6A4805009F4123 /* MakeDateSignVC.xib */,
+				7470FB9F1F6CCEDD009F4123 /* ViewpointDetailVC.h */,
+				7470FBA01F6CCEDD009F4123 /* ViewpointDetailVC.m */,
+				7470FBA11F6CCEDD009F4123 /* ViewpointDetailVC.xib */,
+				7470FBA41F6CD8B0009F4123 /* DateSignListVC.h */,
+				7470FBA51F6CD8B0009F4123 /* DateSignListVC.m */,
+				7470FBA61F6CD8B0009F4123 /* DateSignListVC.xib */,
+				7470FB941F6CC8C9009F4123 /* Topic */,
 			);
 			path = Specialwork;
+			sourceTree = "<group>";
+		};
+		7470FB941F6CC8C9009F4123 /* Topic */ = {
+			isa = PBXGroup;
+			children = (
+				7470FB9A1F6CC8E9009F4123 /* TopicListVC.h */,
+				7470FB9B1F6CC8E9009F4123 /* TopicListVC.m */,
+				7470FB9C1F6CC8E9009F4123 /* TopicListVC.xib */,
+				7470FB951F6CC8D7009F4123 /* TopicListTableViewCell.h */,
+				7470FB961F6CC8D7009F4123 /* TopicListTableViewCell.m */,
+				7470FB971F6CC8D7009F4123 /* TopicListTableViewCell.xib */,
+			);
+			path = Topic;
 			sourceTree = "<group>";
 		};
 		74DFCC041F555D290029FD98 /* Company */ = {
@@ -2165,6 +2216,7 @@
 				7470FB491F68C946009F4123 /* AddWorkExperienceVC.xib in Resources */,
 				74AEA2571F5408E0003FED3F /* DesiredJopCollectionViewCell.xib in Resources */,
 				74DFCC331F5646EB0029FD98 /* IntentJobListTableViewCell.xib in Resources */,
+				7470FB931F6CC4BF009F4123 /* riqian.png in Resources */,
 				74FC5F751F5FCD07006574A3 /* ArticleDetailVC.xib in Resources */,
 				A6F160981E72388700F8DBA4 /* 图层-8@2x.png in Resources */,
 				74EAAA661F5E686100F1098D /* MySelfVC.xib in Resources */,
@@ -2176,9 +2228,11 @@
 				7469205A1F56642D001C1467 /* JobDetailVC.xib in Resources */,
 				742EFD171F67BBB900C332FF /* ExpectedWorkTableViewCell.xib in Resources */,
 				741E96851EA09C690073B1C5 /* AAHighchartsMore.js in Resources */,
+				7470FBA81F6CD8B0009F4123 /* DateSignListVC.xib in Resources */,
 				7435D7D31F4D70810089D61A /* CommitVC.xib in Resources */,
 				74E36F721F625C7D0091C95C /* InterviewEndListVC.xib in Resources */,
 				A6F160991E72388700F8DBA4 /* 图层-9@2x.png in Resources */,
+				7470FB9E1F6CC8E9009F4123 /* TopicListVC.xib in Resources */,
 				A6F160931E72388700F8DBA4 /* 图层-50@2x.png in Resources */,
 				A6F1607E1E72388700F8DBA4 /* 图层-31@2x.png in Resources */,
 				7435D7E91F4D70810089D61A /* Q_ADetailVC.xib in Resources */,
@@ -2188,6 +2242,7 @@
 				7444652B1F55570B00C866EE /* LocalCityTableViewCell.xib in Resources */,
 				A6F160861E72388700F8DBA4 /* 图层-39@2x.png in Resources */,
 				7470FB741F68F668009F4123 /* SkillListTableViewCell.xib in Resources */,
+				7470FB911F6CC473009F4123 /* DateSignTableViewCell.xib in Resources */,
 				7444652F1F55573800C866EE /* city.json in Resources */,
 				74EAAA891F5E711C00F1098D /* SelectVC.xib in Resources */,
 				74E36F551F62426E0091C95C /* MessageListVC.xib in Resources */,
@@ -2241,6 +2296,7 @@
 				A6F160A41E72388700F8DBA4 /* welcom3.png in Resources */,
 				A6F1606B1E72388700F8DBA4 /* 图层-14@2x.png in Resources */,
 				7470FB5A1F68E320009F4123 /* ProjectExperienceListVC.xib in Resources */,
+				7470FBA31F6CCEDD009F4123 /* ViewpointDetailVC.xib in Resources */,
 				A6F1607D1E72388700F8DBA4 /* 图层-30@2x.png in Resources */,
 				7470FB2E1F67D6DF009F4123 /* SkillTableViewCell.xib in Resources */,
 				742EFD021F67A20900C332FF /* EducationTableViewCell.xib in Resources */,
@@ -2252,6 +2308,7 @@
 				7470FB851F6A2F75009F4123 /* SpecialWorkHotCollectionViewCell.xib in Resources */,
 				A6F160961E72388700F8DBA4 /* 图层-6@2x.png in Resources */,
 				741E96811EA09C690073B1C5 /* AAChartView.html in Resources */,
+				7470FB991F6CC8D7009F4123 /* TopicListTableViewCell.xib in Resources */,
 				A6F1606E1E72388700F8DBA4 /* 图层-17@2x.png in Resources */,
 				7470FB8C1F6A4805009F4123 /* MakeDateSignVC.xib in Resources */,
 				74EAAA751F5E686B00F1098D /* SceneExaminationTableViewCell.xib in Resources */,
@@ -2393,6 +2450,7 @@
 				74FA24F01F4ABF4A00C7ADEB /* HXTagCollectionViewCell.m in Sources */,
 				A6F1609F1E72388700F8DBA4 /* YJMBannerView.m in Sources */,
 				74FA24F11F4ABF4A00C7ADEB /* HXTagCollectionViewFlowLayout.m in Sources */,
+				7470FBA21F6CCEDD009F4123 /* ViewpointDetailVC.m in Sources */,
 				A6F160A01E72388700F8DBA4 /* EmojiVC.m in Sources */,
 				A6F0C9381ED315AA0061D41D /* XLPlainFlowLayout.m in Sources */,
 				74FC5F6F1F5FA52A006574A3 /* GossipDetailVC.m in Sources */,
@@ -2401,6 +2459,7 @@
 				746920591F56642D001C1467 /* JobDetailVC.m in Sources */,
 				A6F1609B1E72388700F8DBA4 /* YJMNavigationController.m in Sources */,
 				A6F15FC21E722AC700F8DBA4 /* ViewController.m in Sources */,
+				7470FB901F6CC473009F4123 /* DateSignTableViewCell.m in Sources */,
 				741E967E1EA09C690073B1C5 /* AAChartView.m in Sources */,
 				741E967F1EA09C690073B1C5 /* AAJsonConverter.m in Sources */,
 				7435D7F01F4D70E50089D61A /* YJMTitleButton.m in Sources */,
@@ -2478,6 +2537,7 @@
 				742EFD071F67A67D00C332FF /* EducationListTableViewCell.m in Sources */,
 				A6F160611E72388700F8DBA4 /* BaseModel.m in Sources */,
 				741E96911EA09C690073B1C5 /* AAMarker.m in Sources */,
+				7470FB981F6CC8D7009F4123 /* TopicListTableViewCell.m in Sources */,
 				7470FB5E1F68E332009F4123 /* ProjectExperienceListTableViewCell.m in Sources */,
 				74E36F3A1F623BD10091C95C /* MyCollectionVC.m in Sources */,
 				74E371961F6769090091C95C /* HeadTableViewCell.m in Sources */,
@@ -2525,6 +2585,7 @@
 				7435D7E61F4D70810089D61A /* Q_ADetailListTableViewCell.m in Sources */,
 				74E36F5F1F62450D0091C95C /* MyAttendTopicListTableViewCell.m in Sources */,
 				7435D7D01F4D70810089D61A /* CommitTableViewCell.m in Sources */,
+				7470FBA71F6CD8B0009F4123 /* DateSignListVC.m in Sources */,
 				7470FB481F68C946009F4123 /* AddWorkExperienceVC.m in Sources */,
 				74FC5F5E1F5F8A70006574A3 /* GossipListTableViewCell.m in Sources */,
 				741E96111E9F986A0073B1C5 /* TimeSelectView.m in Sources */,
@@ -2539,6 +2600,7 @@
 				741E962E1EA064A80073B1C5 /* MSSCalendarPopView.m in Sources */,
 				741E969C1EA09C690073B1C5 /* AATitle.m in Sources */,
 				7435D7DE1F4D70810089D61A /* JobTableViewCell.m in Sources */,
+				7470FB9D1F6CC8E9009F4123 /* TopicListVC.m in Sources */,
 				742EFD111F67B1EA00C332FF /* AddEducationVC.m in Sources */,
 				741E962B1EA064A80073B1C5 /* MSSCalendarCollectionViewCell.m in Sources */,
 				7470FB6E1F68F653009F4123 /* AddSkillVC.m in Sources */,

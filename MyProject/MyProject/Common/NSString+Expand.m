@@ -86,7 +86,7 @@
  NSString
  */
 
--(NSString *)subString :(int)star length:(int)length
+-(NSString *)subString :(NSInteger)star length:(NSInteger)length
 {
     if (self.length<star+length) {
         return nil;

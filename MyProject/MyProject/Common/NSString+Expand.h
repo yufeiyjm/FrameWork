@@ -59,7 +59,7 @@
  返回结果:
  NSString
  */
--(NSString *)subString :(int)star length:(int)length;
+-(NSString *)subString :(NSInteger)star length:(NSInteger)length;
 /*
  方法说明:
  字符串中是否包含str2
