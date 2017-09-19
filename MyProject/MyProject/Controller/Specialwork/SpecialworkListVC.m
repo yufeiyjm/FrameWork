@@ -14,7 +14,7 @@
 #import "TopicListVC.h"
 #import "ViewpointDetailVC.h"
 #import "DateSignListVC.h"
-
+#import "SpecialDetailVC.h"
 @interface SpecialworkListVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic)  NSMutableArray *arrData;//图片名数组
@@ -125,6 +125,8 @@
         }else{
             cell.topTitleHeight.constant = 0;
         }
+        cell.specialDetailButton.tag = indexPath.row;
+        [cell.specialDetailButton addTarget:self action:@selector(specialDetailClick:) forControlEvents:UIControlEventTouchUpInside];
         cell.lineHeight.constant = 10;
         return cell;
     }
@@ -137,7 +139,11 @@
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
-
+-(void)specialDetailClick:(UIButton *)sender{
+    SpecialDetailVC *vc = [[SpecialDetailVC alloc]init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
 #pragma mark -
 #pragma mark 下拉刷新
 - (void)downRefreshRequest //内部方法改

@@ -107,6 +107,12 @@
 		7444652C1F55570B00C866EE /* CityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 744465261F55570B00C866EE /* CityTableViewCell.m */; };
 		7444652D1F55570B00C866EE /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 744465271F55570B00C866EE /* CityTableViewCell.xib */; };
 		7444652F1F55573800C866EE /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = 7444652E1F55573800C866EE /* city.json */; };
+		7446360C1F6FC48A00406AF5 /* SpecialDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 744636091F6FC48A00406AF5 /* SpecialDetailVC.m */; };
+		7446360D1F6FC48A00406AF5 /* SpecialDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7446360A1F6FC48A00406AF5 /* SpecialDetailVC.xib */; };
+		7446361B1F6FC50A00406AF5 /* SpecialDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 744636191F6FC50A00406AF5 /* SpecialDetailTableViewCell.m */; };
+		7446361C1F6FC50A00406AF5 /* SpecialDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7446361A1F6FC50A00406AF5 /* SpecialDetailTableViewCell.xib */; };
+		744636201F70A06200406AF5 /* ReaseInterviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7446361E1F70A06200406AF5 /* ReaseInterviewVC.m */; };
+		744636211F70A06200406AF5 /* ReaseInterviewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7446361F1F70A06200406AF5 /* ReaseInterviewVC.xib */; };
 		744D93B91F4A860900BB4DDF /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 744D93B81F4A860900BB4DDF /* UIScrollView+EmptyDataSet.m */; };
 		746920591F56642D001C1467 /* JobDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 746920571F56642D001C1467 /* JobDetailVC.m */; };
 		7469205A1F56642D001C1467 /* JobDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 746920581F56642D001C1467 /* JobDetailVC.xib */; };
@@ -555,6 +561,15 @@
 		744465261F55570B00C866EE /* CityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityTableViewCell.m; sourceTree = "<group>"; };
 		744465271F55570B00C866EE /* CityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
 		7444652E1F55573800C866EE /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
+		744636091F6FC48A00406AF5 /* SpecialDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialDetailVC.m; sourceTree = "<group>"; };
+		7446360A1F6FC48A00406AF5 /* SpecialDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpecialDetailVC.xib; sourceTree = "<group>"; };
+		7446360B1F6FC48A00406AF5 /* SpecialDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialDetailVC.h; sourceTree = "<group>"; };
+		744636181F6FC50A00406AF5 /* SpecialDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialDetailTableViewCell.h; sourceTree = "<group>"; };
+		744636191F6FC50A00406AF5 /* SpecialDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialDetailTableViewCell.m; sourceTree = "<group>"; };
+		7446361A1F6FC50A00406AF5 /* SpecialDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpecialDetailTableViewCell.xib; sourceTree = "<group>"; };
+		7446361D1F70A06200406AF5 /* ReaseInterviewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaseInterviewVC.h; sourceTree = "<group>"; };
+		7446361E1F70A06200406AF5 /* ReaseInterviewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaseInterviewVC.m; sourceTree = "<group>"; };
+		7446361F1F70A06200406AF5 /* ReaseInterviewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReaseInterviewVC.xib; sourceTree = "<group>"; };
 		744D93B71F4A860900BB4DDF /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
 		744D93B81F4A860900BB4DDF /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
 		746920561F56642D001C1467 /* JobDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDetailVC.h; sourceTree = "<group>"; };
@@ -1424,6 +1439,12 @@
 				7470FB811F6A2F75009F4123 /* SpecialWorkHotCollectionViewCell.h */,
 				7470FB821F6A2F75009F4123 /* SpecialWorkHotCollectionViewCell.m */,
 				7470FB831F6A2F75009F4123 /* SpecialWorkHotCollectionViewCell.xib */,
+				7446360B1F6FC48A00406AF5 /* SpecialDetailVC.h */,
+				744636091F6FC48A00406AF5 /* SpecialDetailVC.m */,
+				7446360A1F6FC48A00406AF5 /* SpecialDetailVC.xib */,
+				744636181F6FC50A00406AF5 /* SpecialDetailTableViewCell.h */,
+				744636191F6FC50A00406AF5 /* SpecialDetailTableViewCell.m */,
+				7446361A1F6FC50A00406AF5 /* SpecialDetailTableViewCell.xib */,
 				7470FB8D1F6CC473009F4123 /* DateSignTableViewCell.h */,
 				7470FB8E1F6CC473009F4123 /* DateSignTableViewCell.m */,
 				7470FB8F1F6CC473009F4123 /* DateSignTableViewCell.xib */,
@@ -1578,6 +1599,9 @@
 				74E36F731F625C950091C95C /* InterviewEndListTableViewCell.h */,
 				74E36F741F625C950091C95C /* InterviewEndListTableViewCell.m */,
 				74E36F751F625C950091C95C /* InterviewEndListTableViewCell.xib */,
+				7446361D1F70A06200406AF5 /* ReaseInterviewVC.h */,
+				7446361E1F70A06200406AF5 /* ReaseInterviewVC.m */,
+				7446361F1F70A06200406AF5 /* ReaseInterviewVC.xib */,
 				74E36F821F6266E90091C95C /* InterviewNOVC.h */,
 				74E36F831F6266E90091C95C /* InterviewNOVC.m */,
 				74E36F841F6266E90091C95C /* InterviewNOVC.xib */,
@@ -2272,6 +2296,7 @@
 				74DFCC231F5646C40029FD98 /* CompanyDetailVC.xib in Resources */,
 				A6F160B71E72388700F8DBA4 /* 测试.jpg in Resources */,
 				A6F160711E72388700F8DBA4 /* 图层-1@2x.png in Resources */,
+				744636211F70A06200406AF5 /* ReaseInterviewVC.xib in Resources */,
 				742EFD1C1F67C0F400C332FF /* ValuesTableViewCell.xib in Resources */,
 				A6F160781E72388700F8DBA4 /* 图层-26@2x.png in Resources */,
 				74E371971F6769090091C95C /* HeadTableViewCell.xib in Resources */,
@@ -2352,6 +2377,7 @@
 				7470FB331F68B268009F4123 /* RemarksTableViewCell.xib in Resources */,
 				A6F160BD1E72390600F8DBA4 /* Info.plist in Resources */,
 				740FCE0F1ED6BA9B00AA7E8A /* InfoPlist.strings in Resources */,
+				7446361C1F6FC50A00406AF5 /* SpecialDetailTableViewCell.xib in Resources */,
 				A6F1607B1E72388700F8DBA4 /* 图层-29@2x.png in Resources */,
 				7470FB641F68E34A009F4123 /* AddProjectExperienceVC.xib in Resources */,
 				A6F1608D1E72388700F8DBA4 /* 图层-45@2x.png in Resources */,
@@ -2373,6 +2399,7 @@
 				A6F160841E72388700F8DBA4 /* 图层-37@2x.png in Resources */,
 				A6F160661E72388700F8DBA4 /* 刷新静态@2x.png in Resources */,
 				A6F160811E72388700F8DBA4 /* 图层-34@2x.png in Resources */,
+				7446360D1F6FC48A00406AF5 /* SpecialDetailVC.xib in Resources */,
 				74B47FD61F4E63FA0045D776 /* CompanyView.xib in Resources */,
 				A6F160971E72388700F8DBA4 /* 图层-7@2x.png in Resources */,
 				74E36F501F62425F0091C95C /* MessageListTableViewCell.xib in Resources */,
@@ -2471,6 +2498,7 @@
 				744465281F55570B00C866EE /* MyCityListViewController.m in Sources */,
 				74EAAA791F5E687E00F1098D /* AddJobNewVC.m in Sources */,
 				7470FB8B1F6A4805009F4123 /* MakeDateSignVC.m in Sources */,
+				7446361B1F6FC50A00406AF5 /* SpecialDetailTableViewCell.m in Sources */,
 				A6F0C9311ED315AA0061D41D /* LGLCalenderCell.m in Sources */,
 				741E96891EA09C690073B1C5 /* AABar.m in Sources */,
 				7470FB7F1F6A18C5009F4123 /* SpecialworkListVC.m in Sources */,
@@ -2516,6 +2544,7 @@
 				744D93B91F4A860900BB4DDF /* UIScrollView+EmptyDataSet.m in Sources */,
 				74E36F491F623C7C0091C95C /* MyTopicCollectionTableViewCell.m in Sources */,
 				A6F1609A1E72388700F8DBA4 /* UIViewController+YJMNavigationExtension.m in Sources */,
+				7446360C1F6FC48A00406AF5 /* SpecialDetailVC.m in Sources */,
 				74E36F341F6237F20091C95C /* MyCommitTableViewCell.m in Sources */,
 				74E3719B1F676A940091C95C /* BaseInfoTableViewCell.m in Sources */,
 				A6F160601E72388700F8DBA4 /* BaseViewController.m in Sources */,
@@ -2560,6 +2589,7 @@
 				741E962C1EA064A80073B1C5 /* MSSCalendarHeaderModel.m in Sources */,
 				741E969D1EA09C690073B1C5 /* AATooltip.m in Sources */,
 				741E96801EA09C690073B1C5 /* AAOptionsConstructor.m in Sources */,
+				744636201F70A06200406AF5 /* ReaseInterviewVC.m in Sources */,
 				74E36F8F1F62703C0091C95C /* WaitUpVideoListTableViewCell.m in Sources */,
 				7444652A1F55570B00C866EE /* LocalCityTableViewCell.m in Sources */,
 				74FA24F21F4ABF4A00C7ADEB /* HXTagsCell.m in Sources */,

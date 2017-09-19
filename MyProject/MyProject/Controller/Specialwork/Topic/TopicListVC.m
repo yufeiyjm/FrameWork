@@ -9,6 +9,7 @@
 #import "TopicListVC.h"
 #import "TopicListTableViewCell.h"
 #import "ViewpointDetailVC.h"
+#import "SpecialDetailVC.h"
 
 @interface TopicListVC ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -61,7 +62,9 @@
 
 - (void )tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
-   
+    SpecialDetailVC *vc = [[SpecialDetailVC alloc]init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
     
 }
 

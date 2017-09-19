@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="253"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="252.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="253"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="taY-Vo-vQd">
@@ -151,16 +151,23 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQ8-OY-tOh">
+                                <rect key="frame" x="0.0" y="0.0" width="347" height="52"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="52" id="2Hg-1c-2XK"/>
                             <constraint firstItem="wG6-OJ-yKh" firstAttribute="leading" secondItem="SqZ-gK-Usy" secondAttribute="leading" id="4Ez-Wg-GID"/>
+                            <constraint firstAttribute="bottom" secondItem="uQ8-OY-tOh" secondAttribute="bottom" id="4bd-WS-e0L"/>
                             <constraint firstItem="urX-eE-aba" firstAttribute="top" secondItem="SqZ-gK-Usy" secondAttribute="top" constant="1" id="6sH-Qd-xaC"/>
                             <constraint firstItem="urX-eE-aba" firstAttribute="leading" secondItem="SqZ-gK-Usy" secondAttribute="leading" id="NOJ-9q-ssk"/>
                             <constraint firstAttribute="trailing" secondItem="urX-eE-aba" secondAttribute="trailing" id="Sie-gs-UA2"/>
                             <constraint firstAttribute="bottom" secondItem="wG6-OJ-yKh" secondAttribute="bottom" id="X63-tS-Q5h"/>
+                            <constraint firstItem="uQ8-OY-tOh" firstAttribute="top" secondItem="SqZ-gK-Usy" secondAttribute="top" id="X99-Z9-eN0"/>
+                            <constraint firstItem="uQ8-OY-tOh" firstAttribute="leading" secondItem="SqZ-gK-Usy" secondAttribute="leading" id="gkF-jM-Y8K"/>
                             <constraint firstAttribute="bottom" secondItem="urX-eE-aba" secondAttribute="bottom" constant="1" id="of3-Kr-KDO"/>
+                            <constraint firstAttribute="trailing" secondItem="uQ8-OY-tOh" secondAttribute="trailing" id="pLI-al-CwJ"/>
                             <constraint firstItem="wG6-OJ-yKh" firstAttribute="top" secondItem="SqZ-gK-Usy" secondAttribute="top" id="q1a-6Z-eqC"/>
                         </constraints>
                     </view>
@@ -221,6 +228,7 @@
                 <outlet property="imageBackTop" destination="9H1-yp-kH2" id="rZz-hG-9Wf"/>
                 <outlet property="imageBackView" destination="ixE-hK-R17" id="kmS-qp-e1W"/>
                 <outlet property="lineHeight" destination="eyp-GZ-Jvk" id="Vhn-4U-8G1"/>
+                <outlet property="specialDetailButton" destination="uQ8-OY-tOh" id="eM6-gr-d24"/>
                 <outlet property="topTitleHeight" destination="CQ3-Qh-WkF" id="SWr-dE-f57"/>
                 <outlet property="zanButton" destination="oCP-eW-rUC" id="MEo-gU-Wn7"/>
             </connections>

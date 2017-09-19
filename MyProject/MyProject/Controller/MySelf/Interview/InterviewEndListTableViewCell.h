@@ -16,4 +16,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *jobNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *companyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *detailLab;
+@property (weak, nonatomic) IBOutlet UIButton *reaseButton;
 @end

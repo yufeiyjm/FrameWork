@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="156"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="155.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="156"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWZ-Qi-jdL">
@@ -188,6 +188,7 @@
                 <outlet property="detailLab" destination="528-yI-Ne6" id="tvL-Kl-W20"/>
                 <outlet property="headImageView" destination="j8Q-IB-aCS" id="3Xe-4y-xJt"/>
                 <outlet property="jobNameLabel" destination="5CR-04-8F8" id="zbL-NE-M49"/>
+                <outlet property="reaseButton" destination="py9-6k-P6T" id="g8r-L3-xAE"/>
                 <outlet property="scaleLabel" destination="sEs-SJ-XlK" id="Fni-4a-qZG"/>
                 <outlet property="tagBackView" destination="huq-dM-cQr" id="yK3-ZF-Aj4"/>
             </connections>
