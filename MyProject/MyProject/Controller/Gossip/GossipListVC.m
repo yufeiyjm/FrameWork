@@ -40,6 +40,7 @@
     self.tableView.tableFooterView = [[UIView alloc]init];
     [self downRefreshRequest];
     [self upRefreshRequest];
+    self.arrData = [NSArray array];
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -94,6 +95,7 @@
 
 - (void )tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
+    
     GossipDetailVC *vc = [[GossipDetailVC alloc]init];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];

@@ -46,7 +46,7 @@
                         <constraint firstAttribute="height" constant="44" id="vfo-ug-B38"/>
                         <constraint firstAttribute="width" constant="44" id="ybB-Cb-32p"/>
                     </constraints>
-                    <state key="normal" image="返回"/>
+                    <state key="normal" image="向左白色箭头"/>
                     <connections>
                         <action selector="backClick:" destination="-1" eventType="touchUpInside" id="3P8-6g-1cA"/>
                     </connections>
@@ -267,8 +267,8 @@
         <image name="welcom4.png" width="750" height="1334"/>
         <image name="全部观点图标" width="7" height="10"/>
         <image name="分享" width="16" height="16"/>
+        <image name="向左白色箭头" width="8" height="13"/>
         <image name="收藏" width="16" height="16"/>
         <image name="话题精选" width="119" height="31"/>
-        <image name="返回" width="8" height="13"/>
     </resources>
 </document>

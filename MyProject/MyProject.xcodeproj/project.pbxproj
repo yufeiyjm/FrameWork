@@ -113,6 +113,8 @@
 		7446361C1F6FC50A00406AF5 /* SpecialDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7446361A1F6FC50A00406AF5 /* SpecialDetailTableViewCell.xib */; };
 		744636201F70A06200406AF5 /* ReaseInterviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7446361E1F70A06200406AF5 /* ReaseInterviewVC.m */; };
 		744636211F70A06200406AF5 /* ReaseInterviewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7446361F1F70A06200406AF5 /* ReaseInterviewVC.xib */; };
+		744636261F70C43C00406AF5 /* PersonalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 744636241F70C43C00406AF5 /* PersonalVC.m */; };
+		744636271F70C43C00406AF5 /* PersonalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 744636251F70C43C00406AF5 /* PersonalVC.xib */; };
 		744D93B91F4A860900BB4DDF /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 744D93B81F4A860900BB4DDF /* UIScrollView+EmptyDataSet.m */; };
 		746920591F56642D001C1467 /* JobDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 746920571F56642D001C1467 /* JobDetailVC.m */; };
 		7469205A1F56642D001C1467 /* JobDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 746920581F56642D001C1467 /* JobDetailVC.xib */; };
@@ -570,6 +572,9 @@
 		7446361D1F70A06200406AF5 /* ReaseInterviewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaseInterviewVC.h; sourceTree = "<group>"; };
 		7446361E1F70A06200406AF5 /* ReaseInterviewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaseInterviewVC.m; sourceTree = "<group>"; };
 		7446361F1F70A06200406AF5 /* ReaseInterviewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReaseInterviewVC.xib; sourceTree = "<group>"; };
+		744636231F70C43C00406AF5 /* PersonalVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalVC.h; sourceTree = "<group>"; };
+		744636241F70C43C00406AF5 /* PersonalVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalVC.m; sourceTree = "<group>"; };
+		744636251F70C43C00406AF5 /* PersonalVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalVC.xib; sourceTree = "<group>"; };
 		744D93B71F4A860900BB4DDF /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
 		744D93B81F4A860900BB4DDF /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
 		746920561F56642D001C1467 /* JobDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDetailVC.h; sourceTree = "<group>"; };
@@ -1189,6 +1194,7 @@
 		7435D7981F4D70810089D61A /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				744636221F70C3F900406AF5 /* Personal */,
 				74E36F4B1F62423A0091C95C /* Message */,
 				746920841F579235001C1467 /* MySelf */,
 				74DFCC0A1F5567E60029FD98 /* Job */,
@@ -1286,6 +1292,16 @@
 				744465271F55570B00C866EE /* CityTableViewCell.xib */,
 			);
 			path = CityList;
+			sourceTree = "<group>";
+		};
+		744636221F70C3F900406AF5 /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+				744636231F70C43C00406AF5 /* PersonalVC.h */,
+				744636241F70C43C00406AF5 /* PersonalVC.m */,
+				744636251F70C43C00406AF5 /* PersonalVC.xib */,
+			);
+			path = Personal;
 			sourceTree = "<group>";
 		};
 		744D93B61F4A860900BB4DDF /* EmptyDataSet */ = {
@@ -2361,6 +2377,7 @@
 				A6F15FC71E722AC700F8DBA4 /* Assets.xcassets in Resources */,
 				A6F15FC51E722AC700F8DBA4 /* Main.storyboard in Resources */,
 				74E36F8B1F626F6D0091C95C /* WaitUpVideoListVC.xib in Resources */,
+				744636271F70C43C00406AF5 /* PersonalVC.xib in Resources */,
 				A6F160901E72388700F8DBA4 /* 图层-48@2x.png in Resources */,
 				74EAAA7A1F5E687E00F1098D /* AddJobNewVC.xib in Resources */,
 				A6F160921E72388700F8DBA4 /* 图层-4@2x.png in Resources */,
@@ -2469,6 +2486,7 @@
 				741E968C1EA09C690073B1C5 /* AADataLabels.m in Sources */,
 				74E371A01F67710A0091C95C /* WorkExperienceTableViewCell.m in Sources */,
 				A6F0C9351ED315AA0061D41D /* LGLHeaderView.m in Sources */,
+				744636261F70C43C00406AF5 /* PersonalVC.m in Sources */,
 				74EAAA881F5E711C00F1098D /* SelectVC.m in Sources */,
 				7444652C1F55570B00C866EE /* CityTableViewCell.m in Sources */,
 				7435D7951F4D17480089D61A /* SelectButtonView.m in Sources */,

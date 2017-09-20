@@ -12,7 +12,7 @@
 #import "AssessmentHomeVC.h"
 #import "GossipListVC.h"
 #import "SpecialworkListVC.h"
-
+#import "UncaughtExceptionHandler.h"
 @interface AppDelegate ()
 
 @end
@@ -22,6 +22,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    InstallUncaughtExceptionHandler();
      self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [self gotoHome];
