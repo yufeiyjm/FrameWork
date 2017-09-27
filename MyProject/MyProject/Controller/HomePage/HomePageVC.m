@@ -19,6 +19,9 @@
 #import "IntentJobListVC.h"
 #import "MySelfVC.h"
 #import "MessageListVC.h"
+#import "ViewpointDetailVC.h"
+#import "SpecialDetailVC.h"
+#import "JobDetailVC.h"
 
 @interface HomePageVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -111,12 +114,14 @@
     
     
     if (indexPath.section == 0) {
+        /**职位列表*/
         static NSString *identifier = @"JobTableViewCell";
         JobTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
         cell.selectionStyle =  UITableViewCellSelectionStyleNone;
         return cell;
         
     }else{
+        /**职场专题*/
         static NSString *identifier = @"WorkTopicsTableViewCell";
         WorkTopicsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
         cell.selectionStyle =  UITableViewCellSelectionStyleNone;
@@ -126,6 +131,8 @@
         }else{
             cell.topTitleHeight.constant = 0;
         }
+        cell.specialDetailButton.tag = indexPath.row;
+        [cell.specialDetailButton addTarget:self action:@selector(specialDetailClick:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
     
@@ -134,11 +141,36 @@
 
 - (void )tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
-    Q_AListVC *vc = [[Q_AListVC alloc]init];
+    if (indexPath.section == 0) {
+       /**职位列表---详情*/
+        
+        JobDetailVC *vc = [[JobDetailVC alloc]init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    }else{
+        /**观点详情*/
+        ViewpointDetailVC *vc = [[ViewpointDetailVC alloc]init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+   
+}
+/*
+ 方法描述:
+ 专题详情
+ 
+ 参数说明:
+ <#参数说明#>
+ 
+ 返回结果:
+ <#返回结果#>
+ 
+ */
+-(void)specialDetailClick:(UIButton *)sender{
+    SpecialDetailVC *vc = [[SpecialDetailVC alloc]init];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
-
 #pragma mark -
 #pragma mark 下拉刷新
 - (void)downRefreshRequest //内部方法改

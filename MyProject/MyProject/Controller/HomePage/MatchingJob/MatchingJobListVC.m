@@ -11,6 +11,8 @@
 #import "MatchingJobListTopicTableViewCell.h"
 #import "SelectButtonView.h"
 #import "CompanyView.h"
+#import "JobDetailVC.h"
+#import "SpecialDetailVC.h"
 
 @interface MatchingJobListVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -54,6 +56,10 @@
     self.salaryView.selectSure = ^(NSInteger index){
         SaintiLog(@"点击了第%zd个了啊",index);
     };
+    
+    [self.jobTypeView close];
+    [self.salaryView close];
+    [self.companyView close];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
@@ -67,12 +73,14 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (indexPath.row != 2) {
+        
         static NSString *identifier = @"JobTableViewCell";
         JobTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
         cell.selectionStyle =  UITableViewCellSelectionStyleNone;
         
         return cell;
     }else{
+        /**第三条固定插入一个专题*/
         static NSString *identifier = @"MatchingJobListTopicTableViewCell";
         MatchingJobListTopicTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
         cell.selectionStyle =  UITableViewCellSelectionStyleNone;
@@ -86,7 +94,15 @@
 
 - (void )tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
-
+    if (indexPath.row != 2) {
+        SpecialDetailVC *vc = [[SpecialDetailVC alloc]init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    }else{
+        JobDetailVC *vc = [[JobDetailVC alloc]init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
     
 }
 

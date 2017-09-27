@@ -13,6 +13,9 @@
 #import "GossipListVC.h"
 #import "SpecialworkListVC.h"
 #import "UncaughtExceptionHandler.h"
+#import "LoginVC.h"
+
+
 @interface AppDelegate ()
 
 @end
@@ -22,11 +25,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    InstallUncaughtExceptionHandler();
+//    InstallUncaughtExceptionHandler();
      self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    [self gotoHome];
+    [self gotoLogin];
     return YES;
+}
+-(void)gotoLogin{
+    LoginVC *vc = [[LoginVC alloc]init];
+    YJMNavigationController *homeNav = [[YJMNavigationController alloc]initWithRootViewController:vc];
+    self.window.rootViewController = homeNav;
+    [self.window makeKeyAndVisible];
+    
 }
 -(void)gotoHome{
     

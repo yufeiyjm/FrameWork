@@ -9,6 +9,7 @@
 #import "ViewpointDetailVC.h"
 #import "Q_ADetailListTableViewCell.h"
 #import "UIImageView+MHFacebookImageViewer.h"
+#import "IQKeyboardManager.h"
 
 @interface ViewpointDetailVC ()<MHFacebookImageViewerDatasource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -48,6 +49,14 @@
     
     ///监听键盘高度变化
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardFrameChange:) name:UIKeyboardWillChangeFrameNotification object:nil];
+}
+
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [[IQKeyboardManager sharedManager] setEnable:YES];
+    
 }
 -(void)textFieldDidBeginEditing:(UITextField *)textField{
     
@@ -160,6 +169,7 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    [[IQKeyboardManager sharedManager] setEnable:NO];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     

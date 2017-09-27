@@ -23,4 +23,6 @@
 #import "AAGlobalMacro.h"
 #import "UrlSharedManager.h"
 #import "MJRefresh.h"
+#import "UIView+LBExtension.h"
+
 #endif

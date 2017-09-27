@@ -8,9 +8,11 @@
 
 #import "MakeDateSignVC.h"
 #import "NSString+Expand.h"
+#import "IQKeyboardManager.h"
 #define titleTag 1
 #define titleSayTag 2
 #define contentTag 3
+
 @interface MakeDateSignVC ()
 @property (weak, nonatomic) IBOutlet UILabel *titleHanLabel1;
 @property (weak, nonatomic) IBOutlet UILabel *titleHanLabel2;
@@ -111,6 +113,7 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+     [[IQKeyboardManager sharedManager] setEnable:NO];
 }
 - (BOOL)isPureInt:(NSString *)string{
     NSScanner* scan = [NSScanner scannerWithString:string];
@@ -119,6 +122,13 @@
 }
 
 
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [[IQKeyboardManager sharedManager] setEnable:YES];
+    
+}
 -(void)textFieldDidBeginEditing:(UITextField *)textField{
    
 }

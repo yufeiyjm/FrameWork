@@ -8,6 +8,7 @@
 
 #import "ArticleDetailVC.h"
 #import "Q_ADetailListTableViewCell.h"
+#import "IQKeyboardManager.h"
 
 @interface ArticleDetailVC ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -44,6 +45,14 @@
     self.topView.frame = CGRectMake(0, 0, kScreenWidth, self.contentLabel.mj_h + 90);
     self.tableView.tableHeaderView = self.topView;
     [self.tableView reloadData];
+}
+
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [[IQKeyboardManager sharedManager] setEnable:YES];
+    
 }
 -(void)textFieldDidBeginEditing:(UITextField *)textField{
     
@@ -95,6 +104,7 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    [[IQKeyboardManager sharedManager] setEnable:NO];
 }
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     [self.commitTextField resignFirstResponder];

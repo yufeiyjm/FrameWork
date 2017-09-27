@@ -136,8 +136,7 @@
 
 - (void )tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
-    self.arrData = [NSArray array];
-    SaintiLog(@"%@",self.arrData[56]);
+
     ViewpointDetailVC *vc = [[ViewpointDetailVC alloc]init];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];

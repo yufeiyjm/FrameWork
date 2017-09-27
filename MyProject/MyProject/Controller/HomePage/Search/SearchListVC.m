@@ -8,6 +8,7 @@
 
 #import "SearchListVC.h"
 #import "JobTableViewCell.h"
+#import "JobDetailVC.h"
 
 @interface SearchListVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -51,7 +52,9 @@
 
 - (void )tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
-    
+    JobDetailVC *vc = [[JobDetailVC alloc]init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark -
